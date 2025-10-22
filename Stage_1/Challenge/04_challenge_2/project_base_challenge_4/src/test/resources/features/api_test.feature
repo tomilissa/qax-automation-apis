@@ -1,4 +1,4 @@
-Feature: API Tests with Karate
+Feature: API Tests with Karate reqres.in
 
 Background:
   * url 'https://reqres.in/api'
