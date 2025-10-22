@@ -102,19 +102,23 @@ Background:
    And header Content-Type = 'application/json; charset=utf-8'
    When method get
    Then status 200
+
+   * def isBirthdateValid = function(v) { return v == null || v.matches('^\\d{4}-\\d{2}-\\d{2}$') }
+   * def isPortraitPathValid = function(v) { return v == null || v.matches('^/character/\\d+\\.webp$') }
+
    And match each response.results ==
 
       """
         {
             "id": "#number",
             "age": "##number",
-            "birthdate": "##string",
+            "birthdate": "#? isBirthdateValid(_)",
             "gender": "#string",
             "name": "#string",
             "occupation": "##string",
-            "phrases": "##array",
+            "phrases": "#array",
             "status": "#string",
-            "portrait_path": "#string",
+            "portrait_path": "#? isPortraitPathValid(_)",
           }
           """
 
