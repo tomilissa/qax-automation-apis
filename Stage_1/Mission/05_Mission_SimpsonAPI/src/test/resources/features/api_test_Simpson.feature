@@ -2,6 +2,7 @@ Feature: API Tests with Karate Simpsons
 
 Background:
   * url 'https://thesimpsonsapi.com/api'
+  * def pageSize = 20
 
    
    Scenario: CP01 Listar personajes sin especificar página
@@ -74,3 +75,23 @@ Background:
             "results": "#array"
           }
           """
+
+   Scenario: CP05 Calculo de Metadatos en pagina 1
+
+   Given path '/characters'
+   And header Content-Type = 'application/json; charset=utf-8'
+   And param page = 1
+   When method get
+   Then status 200
+   And assert response.results.length <= pageSize
+   And match response.count == "#number"
+
+   Scenario: CP06 Calculo de Metadatos en ultima pagina 
+
+   Given path '/characters'
+   And header Content-Type = 'application/json; charset=utf-8'
+   And param page = 60
+   When method get
+   Then status 200
+   And assert response.results.length <= pageSize
+   And match response.count == "#number"
