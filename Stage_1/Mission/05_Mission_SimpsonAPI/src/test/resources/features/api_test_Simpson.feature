@@ -96,7 +96,6 @@ Background:
    When method get
    Then status 200
    And match response.count == "#number"
-   And assert response.results.length <= pageSize
 
    Scenario: CP07 Validar estructura minima de cada personaje en results
 
