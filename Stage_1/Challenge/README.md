@@ -64,7 +64,6 @@ Breve ejercicio de escenarios de complejidad media con criterios claros. Forma p
   - **Ejecución**
             mvn test -Dtest=karateRunner
 
-  - **Resultados** (evidencias, logs, capturas, reporte HTML/JSON)
-- 🧪 Código/archivos de soporte en subcarpetas (`src`, `tests`, `resources`, etc.) según la tecnología.
-- 🖼️ Evidencias en `evidencias/` cuando aplique.
+  - **Resultados**
+            Evidences
 
