@@ -12,4 +12,8 @@ Background:
     And match response.data[0].email == 'george.bluth@reqres.in' 
     And match response.data[0].first_name == 'George'
     And match response.data[0].last_name == 'Bluth'
+    And match response.data[1].id == 2
+    And match response.data[1].email == 'janet.weaver@reqres.in' 
+    And match response.data[1].first_name == 'Janet'
+    And match response.data[1].last_name == 'Weaver'
 
