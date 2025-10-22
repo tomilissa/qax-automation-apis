@@ -84,8 +84,9 @@ Background:
    And param page = 1
    When method get
    Then status 200
-   And assert response.results.length <= pageSize
    And match response.count == "#number"
+   And assert response.results.length <= pageSize
+   
    
    Scenario: CP06 Calculo de Metadatos en ultima pagina 
 
