@@ -5,8 +5,8 @@ Background:
 
 Scenario: CP01 - Generar email unico
 
-* def utils = callonce read('emailUtils.js')
-* print utils.generarEmail()
+* def utils = callonce read('classpath:utils/emailUtils.js')
+* def email = utils.generarEmail()
 
 * def payload = { name: 'tomaslissa', email: email }
 
@@ -15,8 +15,10 @@ And path 'users'
 When method post
 Then status 201
 
-* def Name = payload.name
-* def Email = payload.email
+* def nameValidated = payload.name
 * def idValidated = response.id
 
 * print 'El id del usuario es:', idValidated
+* print 'El nombre del usuario es:', nameValidated
+* print 'El email del usuario es:', email
+
