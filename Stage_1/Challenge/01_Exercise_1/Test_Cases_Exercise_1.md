@@ -71,3 +71,4 @@ Base_url: https://jsonplaceholder.typicode.com/
       - CP03 - Listar comentarios de un post
 
 ### 🖼️ Evidencias: 
+- Stage_1\Challenge\01_exercise_1\Evidences

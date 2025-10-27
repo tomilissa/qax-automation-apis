@@ -3,7 +3,7 @@
 		"_postman_id": "7db9f94a-455a-4fca-ba10-e59e208c590b",
 		"name": "Api Testing - QAXPERT - TomiLissa",
 		"description": "Colección para probar creación de posts, listado de usuarios y comentarios en JSONPlaceholder",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "8621497"
 	},
 	"item": [
@@ -21,18 +21,7 @@
 					"mode": "raw",
 					"raw": "{\n  \"title\": \"Mi primer post QAx\",\n  \"body\": \"Contenido de prueba Tomas\",\n  \"userId\": 1\n}"
 				},
-				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts",
-					"protocol": "https",
-					"host": [
-						"jsonplaceholder",
-						"typicode",
-						"com"
-					],
-					"path": [
-						"posts"
-					]
-				}
+				"url": "{{Base_url}}/posts"
 			},
 			"response": []
 		},
@@ -41,18 +30,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/users",
-					"protocol": "https",
-					"host": [
-						"jsonplaceholder",
-						"typicode",
-						"com"
-					],
-					"path": [
-						"users"
-					]
-				}
+				"url": "{{Base_url}}/users"
 			},
 			"response": []
 		},
@@ -62,12 +40,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/comments?postId=2",
-					"protocol": "https",
+					"raw": "{{Base_url}}/comments?postId=2",
 					"host": [
-						"jsonplaceholder",
-						"typicode",
-						"com"
+						"{{Base_url}}"
 					],
 					"path": [
 						"comments"
