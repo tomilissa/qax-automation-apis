@@ -21,15 +21,15 @@ Token:
 
 **Criterios de aceptación**
 
-1.  Listar usuarios:
-    *   GET /users debe devolver HTTP 200.
-    *   La lista de usuarios no debe estar vacía y cada usuario debe contener id, first_name, last_name y email.
-2.  Registro de usuario:
+1.  Registrar un nuevo usuario:
     *   POST /register con payload válido devuelve HTTP 200.
     *   La respuesta debe incluir un id y un token.
-3.  Login de usuario:
+2.  Login de usuario:
     *   POST /login con credenciales válidas devuelve HTTP 200.
     *   La respuesta debe contener un token para autenticación.
+3.  Listar usuarios:
+    *   GET /users debe devolver HTTP 200.
+    *   La lista de usuarios no debe estar vacía y cada usuario debe contener id, first_name, last_name y email.
 
 ### ✅ Casos de Prueba
 
@@ -40,40 +40,45 @@ Token:
 
 #### **Scenario: CP01 - Registrar un nuevo usuario**
 *   **Given:** la API está disponible en la Base_url
-*   **When:** realizo una petición POST a "/posts" con el body:
+*   **When:** realizo una petición POST para registrar un nuevo usuario a "/register" con el body:
       """
       {
-        "title": "Mi primer post",
-        "body": "Contenido de prueba Tomas",
-        "userId": 1
+        "username": "tomilissa",
+        "email": "tomi.lissarrague@gmail.com",
+        "password": "tolissa200"
       }
       """
-*   **Then:** el código de respuesta debe ser 201
-*   **And:** la respuesta debe contener un campo "id"
-*   **And:** los campos "title", "body" y "userId" deben coincidir con lo enviado
-
-#### **Scenario: CP02 - Listar todos los usuarios**
-*   **Given:** la API está disponible en la Base_url
-*   **When:** realizo una petición GET a "/users"
 *   **Then:** el código de respuesta debe ser 200
-*   **And:** la lista de usuarios no debe estar vacía
-*   **And:** cada usuario debe contener los campos "id", "name", "username" y "email"
+*   **And:** la respuesta debe incluir un id y un token.
 
-#### **Scenario: CP03 - Listar comentarios de un post**
+#### **Scenario: CP02 - Login del usuario**
 *   **Given:** la API está disponible en la Base_url
-*   **When:** realizo una petición GET a "/comments?postId=1"
+*   **When:** realizo una petición POST para loggear al usuario a "/login" con el body:
+      """
+      {
+        "username": "tomilissa",
+        "email": "tomi.lissarrague@gmail.com",
+        "password": "tolissa200"
+      }
+      """
 *   **Then:** el código de respuesta debe ser 200
-*   **And:** cada comentario debe contener los campos "id", "name", "email" y "body"
+*   **And:** la respuesta debe contener un token para autenticación.
+
+#### **Scenario: CP03 - Listar usuarios**
+*   **Given:** la API está disponible en la Base_url
+*   **When:** realizo una petición GET a "/users" para obtener un listado de usuarios
+*   **Then:** el código de respuesta debe ser 200
+*   **And:** la lista de usuarios no debe estar vacía y cada usuario debe contener id, first_name, last_name y email
 
 
 
 ### 🚀 Ejecución (comandos o pasos):
-1.  Descargar la colección de Postman `Api Testing - QAXPERT - TomiLissa.postman_collection.json`
+1.  Descargar la colección de Postman `ReqRes TomiLissa.postman_collection.json`
 2.  Abrir Postman e importar la colección del paso 1.
 3.  Ejecutar los 3 request disponibles en la colección:
-      - CP01 - Crear nuevo post
-      - CP02 - Listar usuarios
-      - CP03 - Listar comentarios de un post
+      - CP01 - 
+      - CP02 - 
+      - CP03 - 
 
 ### 🖼️ Evidencias: 
 - Stage_1/Challenge/02_challenge_1/Evidences
