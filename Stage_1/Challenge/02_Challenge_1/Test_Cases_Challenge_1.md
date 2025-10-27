@@ -33,12 +33,12 @@ Token:
 
 ### ✅ Casos de Prueba
 
-#### **Feature: Gestión de publicaciones y comentarios en la API JSONPlaceholder**
+#### **Feature: Gestión de usuarios en la API Reqres**
   * Como tester de APIs
-  * Quiero validar los endpoints de posts, users y comments
+  * Quiero poder registrar nuevos usuarios, listar usuarios y realizar login en el sistema de prueba
   * Para asegurarme de que funcionan correctamente
 
-#### **Scenario: CP01 - Crear un nuevo post exitosamente**
+#### **Scenario: CP01 - Registrar un nuevo usuario**
 *   **Given:** la API está disponible en la Base_url
 *   **When:** realizo una petición POST a "/posts" con el body:
       """
@@ -76,4 +76,4 @@ Token:
       - CP03 - Listar comentarios de un post
 
 ### 🖼️ Evidencias: 
-- Stage_1/Challenge/01_exercise_1/Evidences
+- Stage_1/Challenge/02_challenge_1/Evidences
