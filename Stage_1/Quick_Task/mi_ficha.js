@@ -1,10 +1,9 @@
-const prompt = require('prompt-sync')({sigint: true});
 
 let nombre = 'Tomas';
 var edad = 32;
 let estudioAutomation = true;
 let hobbies = ['Futbol',  'Tenis',  'PS5'];
-var edad = 33;
+
 
 console.log('Nombre: ' + nombre);
 console.log('Edad: ' + edad);
@@ -18,6 +17,7 @@ console.log(typeof hobbies);
 
 var nuevoHobbie;
 
-var nuevoHobbie = prompt("¿Cuál es tu hobby favorito?");
+var nuevoHobbie = 'Truco';
 hobbies.push(nuevoHobbie);
 console.log(hobbies.length);
+edad += 1

@@ -14,6 +14,7 @@ Scenario: Generate email unico
 
 Given url baseUrl
 And path 'users'
+And request payload
 When method post
 Then status 201
 
