@@ -1,7 +1,7 @@
 > # Portafolio de Automatización de Pruebas - Tomás Lissarrague
 >
 > Este repositorio alberga los proyectos de automatización de pruebas de API que desarrollé durante la mentoría QA Pro Level de QAX. 
-> Mi objetivo es demostrar mis habilidades para crear, ejecutar y mantener tests robustos y confiables, garantizando la mejor calidad. 
+Mi objetivo es demostrar mis habilidades para crear, ejecutar y mantener tests robustos y confiables, garantizando la mejor calidad. 
 >
 > ### Tecnologías que utilizo 
 > - **Lenguaje:** Java 
@@ -15,9 +15,12 @@
 > - **Challenge 1:** Automatización de un CRUD completo para la API de gestión de usuarios utilizando Postman. [https://github.com/tomilissa/qax-automation-apis/tree/feature/stagee1/Stage_1/Challenge/02_Challenge_1]
 > - **Challenge 2:** Automatización de un CRUD completo para la API de gestión de usuarios utilizando Karate. [https://github.com/tomilissa/qax-automation-apis/tree/feature/stagee1/Stage_1/Challenge/03_Exercise_2/project_base]
 > - **Mission:** Creación de un framework base para pruebas de API de "The Simpsons" con reportes personalizados [https://github.com/tomilissa/qax-automation-apis/tree/feature/stagee1/Stage_1/Mission/05_Mission_SimpsonAPI]
-Link a la carpeta de la Mission 
 >
 > #### Stage 2:
+> - **Challenge 1:** 
+> - **Challenge 2:**
+> - **Mission:**
+
 >
 > ### Contacto: 
 > - **LinkedIn:** www.linkedin.com/in/tomas-lissarrague
