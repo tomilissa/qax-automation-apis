@@ -54,4 +54,5 @@ Practicar la inicialización de variables, tipos de datos y el uso de funciones 
 3.  Cambia al directorio del proyecto con el comando: cd Stage_1/Quick_Task
 4.  Ejecuta el script con el comando: node mi_ficha.js
 
-## 🖼️ Evidencias: Stage_1/Quick_Task/Evidences
+### 🖼️ Evidencias: 
+- Stage_1/Quick_Task/Evidences
