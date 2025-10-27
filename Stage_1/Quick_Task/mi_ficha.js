@@ -1,4 +1,3 @@
-
 let nombre = 'Tomas';
 var edad = 32;
 let estudioAutomation = true;
