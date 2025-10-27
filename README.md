@@ -4,7 +4,7 @@
 Mi objetivo es demostrar mis habilidades para crear, ejecutar y mantener tests robustos y confiables, garantizando la mejor calidad. 
 >
 > ### Tecnologías que utilizo 
-> - **Lenguaje:** Java 
+> - **Lenguaje:** Java, JavaScript 
 > - **Frameworks de Automatización:** Karate 
 > - **Gestión de Pruebas:** JUnit 
 > - **Herramientas Adicionales:** Postman, Git, Maven

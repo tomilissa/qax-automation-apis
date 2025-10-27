@@ -39,7 +39,7 @@ Base_url: https://jsonplaceholder.typicode.com/
       """
       {
         "title": "Mi primer post",
-        "body": "Contenido de prueba",
+        "body": "Contenido de prueba Tomas",
         "userId": 1
       }
       """
