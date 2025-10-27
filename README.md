@@ -13,7 +13,7 @@ Mi objetivo es demostrar mis habilidades para crear, ejecutar y mantener tests r
 >
 > #### Stage 1: Fundamentos de API Testing 
 > - **Challenge 1:** Automatización de un CRUD completo para la API de gestión de usuarios utilizando Postman. [https://github.com/tomilissa/qax-automation-apis/tree/feature/stagee1/Stage_1/Challenge/02_Challenge_1]
-> - **Challenge 2:** Automatización de un CRUD completo para la API de gestión de usuarios utilizando Karate. [https://github.com/tomilissa/qax-automation-apis/tree/feature/stagee1/Stage_1/Challenge/03_Exercise_2/project_base]
+> - **Challenge 2:** Automatización de un CRUD completo para la API de gestión de usuarios utilizando Karate. [https://github.com/tomilissa/qax-automation-apis/tree/feature/stagee1/Stage_1/Challenge/04_challenge_2]
 > - **Mission:** Creación de un framework base para pruebas de API de "The Simpsons" con reportes personalizados [https://github.com/tomilissa/qax-automation-apis/tree/feature/stagee1/Stage_1/Mission/05_Mission_SimpsonAPI]
 >
 > #### Stage 2:
