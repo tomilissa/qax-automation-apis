@@ -8,9 +8,9 @@
 
 **Historia de usuario**
 
-Como tester de APIs,
-Quiero poder crear publicaciones (posts), listar usuarios y obtener comentarios asociados a un usuario
-Para validar que la API funcione correctamente y que los datos sean consistentes.
+  * Como tester de APIs,
+  * Quiero poder crear publicaciones (posts), listar usuarios y obtener comentarios asociados a un usuario
+  * Para validar que la API funcione correctamente y que los datos sean consistentes.
 
 Base_url: https://jsonplaceholder.typicode.com/
 
