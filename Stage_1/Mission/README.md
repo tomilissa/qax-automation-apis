@@ -59,7 +59,7 @@
 *   **And:** la lista de personajes no debe estar vacía
 *   **And:** next es null y prev es una URL absoluta correcta 
 
-#### **Scenario: CP06 - Estructura minima de datos por personaje y validación de formatos **
+#### **Scenario: CP06 - Estructura minima de datos por personaje y validación de formatos**
 *   **Given:** la API está disponible en la base_Url
 *   **When:** realizo una petición GET a "/characters" para obtener un listado de personajes
 *   **Then:** el código de respuesta debe ser 200
