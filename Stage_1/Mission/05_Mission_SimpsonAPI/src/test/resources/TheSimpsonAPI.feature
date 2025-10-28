@@ -1,12 +1,7 @@
-Feature: API Tests with Karate Simpsons
+Feature: Exponer listado y detalle de personajes de The Simpsons con paginación
 
-Background:
-  * url 'https://thesimpsonsapi.com/api'
-  * def pageSize = 20
-  
 
-   
-   Scenario: CP01 Listar personajes sin especificar página
+Scenario: CP01 - Listar personajes sin especificar página
 
    Given path '/characters'
    And header Content-Type = 'application/json; charset=utf-8'
@@ -23,25 +18,7 @@ Background:
           }
           """
 
-   Scenario: CP02 Listar personajes indicando página inválida
-
-   Given path '/characters'
-   And header Content-Type = 'application/json; charset=utf-8'
-   And param page = 'a'
-   When method get
-   Then status 200
-   And match response ==
-   """
-          {
-            "count": "#number",
-            "next": "https://thesimpsonsapi.com/api/characters?page=2",
-            "prev": null,
-            "pages": "#number",
-            "results": "#array"
-          }
-          """      
-    
-   Scenario: CP03 Listar personajes por página
+Scenario: CP02 - Listar personajes por página
 
    Given path '/characters'
    And header Content-Type = 'application/json; charset=utf-8'
@@ -59,7 +36,44 @@ Background:
           }
           """
 
-   Scenario: CP04 Listar personajes por ultima página
+Scenario: CP03 - Listar personajes indicando una página inexistente
+
+   Given path '/characters'
+   And header Content-Type = 'application/json; charset=utf-8'
+   And param page = '250'
+   When method get
+   Then status 200
+   And match response ==
+   """
+          {
+            "count": "#number",
+            "next": "https://thesimpsonsapi.com/api/characters?page=2",
+            "prev": null,
+            "pages": "#number",
+            "results": "#array"
+          }
+          """ 
+
+   Scenario: CP04 - Listar personajes indicando página inválida
+
+   Given path '/characters'
+   And header Content-Type = 'application/json; charset=utf-8'
+   And param page = '-1'
+   When method get
+   Then status 200
+   And match response ==
+   """
+          {
+            "count": "#number",
+            "next": "https://thesimpsonsapi.com/api/characters?page=2",
+            "prev": null,
+            "pages": "#number",
+            "results": "#array"
+          }
+          """      
+    
+   
+   Scenario: CP05 - Listar personajes por ultima página
 
    Given path '/characters'
    And header Content-Type = 'application/json; charset=utf-8'
@@ -75,28 +89,9 @@ Background:
             "pages": "#number",
             "results": "#array"
           }
-          """
+          """   
 
-   Scenario: CP05 Calculo de Metadatos en pagina 1
-
-   Given path '/characters'
-   And header Content-Type = 'application/json; charset=utf-8'
-   And param page = 1
-   When method get
-   Then status 200
-   And match response.count == "#number"
-   
-   
-   Scenario: CP06 Calculo de Metadatos en ultima pagina 
-
-   Given path '/characters'
-   And header Content-Type = 'application/json; charset=utf-8'
-   And param page = 60
-   When method get
-   Then status 200
-   And match response.count == "#number"
-
-   Scenario: CP07 Validar estructura minima de cada personaje en results
+   Scenario: CP06 - Validar estructura minima de cada personaje en results
 
    Given path '/characters'
    And header Content-Type = 'application/json; charset=utf-8'
@@ -122,9 +117,9 @@ Background:
           }
           """
 
-   Scenario: CP08 Detalle por ID 200
+   Scenario: CP07 - Obtener info del personaje por ID
 
-   Given path '/characters'
+   Given path '/characters/1'
    And header Content-Type = 'application/json; charset=utf-8'
    When method get
    Then status 200
@@ -138,8 +133,7 @@ Background:
    And match response.results[0].phrases == ["Doh!", "Why you little...!", "Woo-hoo!", "Mmm... (food)... *drooling*", "Stupid Flanders!", "Shut up Flanders!", "AAAAGHH!", "Lisa, knock off that racket!", "Uh oh, the boss.", "Lets all go out for frosty chocolate milkshakes!", "Whatever, Ill be at Moes.", "I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!", "Better them than me.", "Better them than me... Oh wait, that was me.", "Marge, my face hurts again!"]
    And match response.results[0].status == 'Alive'
 
-   Scenario: CP09 Verificar ID inexistente
-
+   Scenario: CP08 - Obtener info del personaje por ID invalido
 
     Given path '/characters/10000'
     And header Content-Type = 'application/json; charset=utf-8'
@@ -154,7 +148,7 @@ Background:
             }
         """
 
-   Scenario: CP10 Verificar que el listado esta ordenado por ID
+   Scenario: CP9 - Verificar que el listado esta ordenado por ID
     Given path '/characters/'
     And header Content-Type = 'application/json; charset=utf-8'
     When method get

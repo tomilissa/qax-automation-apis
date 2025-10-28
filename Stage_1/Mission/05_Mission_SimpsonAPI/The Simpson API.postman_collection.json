@@ -5,7 +5,145 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "8621497"
 	},
-	"item": [],
+	"item": [
+		{
+			"name": "01 - Listar personajes sin especificar pagina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/characters"
+			},
+			"response": []
+		},
+		{
+			"name": "02 - Listar personajes por pagina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/characters?page=2",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 - Listar personajes indicando una página inexistente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/characters?page=250",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "250"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 - Listar personajes indicando pagina invalida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/characters?page=-1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05 - Listar personajes por ultima pagina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/characters?page=60",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06 - Estructura minima de datos por personaje y validación de formatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/characters"
+			},
+			"response": []
+		},
+		{
+			"name": "07 - Listar personaje por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/characters/1"
+			},
+			"response": []
+		},
+		{
+			"name": "08 - Verificar ID inexistente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/characters/10000"
+			},
+			"response": []
+		},
+		{
+			"name": "09 - Verificar que el listado esta ordenado por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/characters"
+			},
+			"response": []
+		}
+	],
 	"event": [
 		{
 			"listen": "prerequest",
