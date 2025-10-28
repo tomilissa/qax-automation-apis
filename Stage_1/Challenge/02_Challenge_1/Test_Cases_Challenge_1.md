@@ -1,4 +1,4 @@
-# Challenge 2
+# Challenge 1
 
 ### 📁 Archivo
 `Stage_1\Challenge\02_challenge_1`
@@ -14,9 +14,9 @@ Para asegurarme de que la API funcione correctamente y que los datos de usuario 
 
 Additional data:
 
-Base_url: https://reqres.in/api
-Token: 
-  - x-api-key: reqres-free-v1
+  - Base_url: https://reqres.in/api
+ 
+  - Token => x-api-key: reqres-free-v1
 
 
 **Criterios de aceptación**

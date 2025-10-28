@@ -1,12 +1,18 @@
 # Mission
 
-## ¿Qué es?
-Breve ejercicio de ejercicios end-to-end con varios casos de prueba. Forma parte del **Stage_1** de la mentoría.
+### 📁 Archivo
+- `Stage_1/Mission/05_Mission_SimpsonAPI`
 
-## Formato esperado de entrega
-- 📁 Carpeta: `Stage_1\Mission\05_Mission_SimpsonAPI`
-- 🗒️ README.md por cada entrega con:
-  - **Automatización de APIs – The Simpsons**
+🗒️
+**Título de la entrega**: Automatización de APIs – The Simpsons
+
+**Historia de usuario**: Exponer listado y detalle de personajes de The Simpsons con paginación
+
+Como consumidor externo de la API (aplicaciones cliente y servicios internos)
+Quiero obtener un listado paginado de personajes y consultar el detalle por id
+Para mostrar información consistente y navegable en mis aplicaciones y reutilizarla en otros servicios.
+
+
   - **Exponer listado y detalle de personajes de The Simpsons con paginación**
   - **Criterios de aceptación**
       - Listado 200 y contrato base
