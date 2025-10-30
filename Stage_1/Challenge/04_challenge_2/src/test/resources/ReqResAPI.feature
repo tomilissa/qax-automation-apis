@@ -1,7 +1,4 @@
-Feature: API Tests with Karate reqres.in
-
-Background:
-  * url 'https://reqres.in/api'
+Feature: Registro de usuario, login y listar usuarios usando la API reqres.in
 
    Scenario: CP01 Listar usuarios
     Given path '/users'

@@ -3,7 +3,7 @@
 ### 📁 Archivo
 - `Stage_1/Mission/05_Mission_SimpsonAPI`
 
-🗒️ **Título de la entrega**: Automatización de APIs – The Simpsons
+**Título de la entrega**: Automatización de APIs – The Simpsons
 
 🗒️ **Historia de usuario**: Exponer listado y detalle de personajes de The Simpsons con paginación
 

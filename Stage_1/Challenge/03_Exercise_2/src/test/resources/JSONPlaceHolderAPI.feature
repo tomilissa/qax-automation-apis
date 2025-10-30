@@ -1,4 +1,4 @@
-Feature: Test de API JSON Placeholder utilizando Karate
+Feature: Gestión de Publicaciones y Comentarios utilizando la API JSON Placeholder utilizando Karate
 
    Scenario: CP01 - Crear un nuevo post exitosamente
     Given path '/posts'
