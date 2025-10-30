@@ -76,9 +76,9 @@ Additional data:
 1.  Descargar la colección de Postman `ReqRes TomiLissa.postman_collection.json`
 2.  Abrir Postman e importar la colección del paso 1.
 3.  Ejecutar los 3 request disponibles en la colección:
-      - CP01 - 
-      - CP02 - 
-      - CP03 - 
+      - CP01 - Registrar un nuevo usuario
+      - CP02 - Login del usuario
+      - CP03 - Listar usuarios
 
 ### 🖼️ Evidencias: 
 - Stage_1/Challenge/02_challenge_1/Evidences
