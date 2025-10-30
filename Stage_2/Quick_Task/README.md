@@ -11,7 +11,7 @@ Crear una función en JavaScript que genere un email único y utilizarla desde u
 #### **CP01 - Generar email unico**
 *   **Given:** la API está disponible en la base_Url
 *   **When:** realizo una petición POST al path /users para generar un mail único
-*   **Then:** el código de respuesta debe ser 200
+*   **Then:** el código de respuesta debe ser 201
 *   **And:** la respuesta debe incluir un id
 
 
