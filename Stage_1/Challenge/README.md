@@ -17,7 +17,7 @@
   * Quiero poder crear publicaciones (posts), listar usuarios y obtener comentarios asociados a un usuario
   * Para validar que la API funcione correctamente y que los datos sean consistentes.
 
-**Historia de usuario 2**: Testing Reqres API en Postman
+**Historia de usuario 2**: Gestión de Usuarios en Reqres API
 
   * Como tester de APIs,
   * Quiero poder listar usuarios, registrar nuevos usuarios y realizar login en el sistema de prueba,
