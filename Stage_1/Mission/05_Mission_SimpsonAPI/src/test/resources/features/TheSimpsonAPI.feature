@@ -1,7 +1,7 @@
 Feature: Exponer listado y detalle de personajes de The Simpsons con paginación
   
-  Background:
-    * url baseUrl
+Background:
+* url baseUrl
 
   Scenario: CP01 Listar personajes sin especificar página
 
