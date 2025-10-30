@@ -1,10 +1,11 @@
 Feature: Exponer listado y detalle de personajes de The Simpsons con paginación
+  
+  Background:
+    * url baseUrl
 
-
-Scenario: CP01 - Listar personajes sin especificar página
+  Scenario: CP01 Listar personajes sin especificar página
 
    Given path '/characters'
-   And header Content-Type = 'application/json; charset=utf-8'
    When method get
    Then status 200
    And match response ==
@@ -47,7 +48,7 @@ Scenario: CP03 - Listar personajes indicando una página inexistente
    """
           {
             "count": "#number",
-            "next": "https://thesimpsonsapi.com/api/characters?page=2",
+            "next": null,
             "prev": null,
             "pages": "#number",
             "results": "#array"
@@ -123,15 +124,15 @@ Scenario: CP03 - Listar personajes indicando una página inexistente
    And header Content-Type = 'application/json; charset=utf-8'
    When method get
    Then status 200
-   And match response.results[0].id == 1
-   And match response.results[0].age == 39
-   And match response.results[0].birthdate == '1956-05-12'
-   And match response.results[0].gender == 'Male'
-   And match response.results[0].name == 'Homer Simpson'
-   And match response.results[0].occupation == 'Safety Inspector'
-   And match response.results[0].portrait_path == '/character/1.webp'
-   And match response.results[0].phrases == ["Doh!", "Why you little...!", "Woo-hoo!", "Mmm... (food)... *drooling*", "Stupid Flanders!", "Shut up Flanders!", "AAAAGHH!", "Lisa, knock off that racket!", "Uh oh, the boss.", "Lets all go out for frosty chocolate milkshakes!", "Whatever, Ill be at Moes.", "I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!", "Better them than me.", "Better them than me... Oh wait, that was me.", "Marge, my face hurts again!"]
-   And match response.results[0].status == 'Alive'
+   And match response.id == 1
+   And match response.age == 39
+   And match response.birthdate == '1956-05-12'
+   And match response.gender == 'Male'
+   And match response.name == 'Homer Simpson'
+   And match response.occupation == 'Safety Inspector'
+   And match response.portrait_path == '/character/1.webp'
+   And match response.phrases == ["Doh!", "Why you little...!", "Woo-hoo!", "Mmm... (food)... *drooling*", "Stupid Flanders!", "Shut up Flanders!", "AAAAGHH!", "Lisa, knock off that racket!", "Uh oh, the boss.", "Lets all go out for frosty chocolate milkshakes!", "Whatever, Ill be at Moes.", "I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!", "Better them than me.", "Better them than me... Oh wait, that was me.", "Marge, my face hurts again!"]
+   And match response.status == 'Alive'
 
    Scenario: CP08 - Obtener info del personaje por ID invalido
 
