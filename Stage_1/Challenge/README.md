@@ -19,8 +19,6 @@
 
 **Historia de usuario 2**: Testing Reqres API en Postman
 
-**Historia de usuario**
-
   * Como tester de APIs,
   * Quiero poder listar usuarios, registrar nuevos usuarios y realizar login en el sistema de prueba,
   * Para asegurarme de que la API funcione correctamente y que los datos de usuario sean consistentes.
