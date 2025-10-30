@@ -26,16 +26,16 @@
 ### ✅ Casos de Prueba & Ejecución
 
 ***Exercise 1***: 
-  - Please review Test Cases File: `Stage_1/Challenge/01_exercise_1/Test_Cases_Exercise_1.md`
+  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Exercise_1.md`
 
 ***Challenge 1***: 
-  - Please review Test Cases File: `Stage_1/Challenge/01_exercise_1/Test_Cases_Challenge_1.md`
+  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Challenge_1.md`
 
 ***Exercise 2***: 
-  - Please review Test Cases File: `Stage_1/Challenge/01_exercise_1/Test_Cases_Exercise_2.md`
+  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Exercise_2.md`
 
 ***Challenge 2***: 
-  - Please review Test Cases File: `Stage_1/Challenge/01_exercise_1/Test_Cases_Challenge_2.md`    
+  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Challenge_2.md`    
 
 
 
