@@ -1,4 +1,10 @@
-Feature: Registro de usuario, login y listar usuarios usando la API reqres.in
+Feature: Probar el Registro de usuario, login y listar usuarios usando la API reqres.in
+
+Background:
+
+* def genEmail = function(usuario) { return 'usuario' + karate.info.timestamp + '@reqres.in' }
+* def emaiOK = genEmail('usuario1')
+* print 'Email generado =', email
 
    Scenario: CP01 Listar usuarios
     Given path '/users'
@@ -16,8 +22,8 @@ Feature: Registro de usuario, login y listar usuarios usando la API reqres.in
     And request
           """
           {
-            "email": "eve.holt@reqres.in",
-            "password": "pistol"
+            "email": "#(emailOK)",
+            "password": "Password1234!"
           }
           """
     When method post
