@@ -7,22 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "CP01 - Listar usuarios",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "x-api-key",
-						"value": "reqres-free-v1",
-						"type": "text"
-					}
-				],
-				"url": "{{Base_url}}/users"
-			},
-			"response": []
-		},
-		{
-			"name": "CP02 - Registro de Usuario",
+			"name": "CP01 - Registrar un nuevo usuario",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -46,7 +31,7 @@
 			"response": []
 		},
 		{
-			"name": "CP03 - Login",
+			"name": "CP02 - Login del usuario",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -58,7 +43,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"pistol\"\r\n}",
+					"raw": "{\r\n  \"username\": \"tomilissa\",\r\n  \"email\": \"tomi.lissarrague@gmail.com\",\r\n  \"password\": \"tolissa200\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -66,6 +51,21 @@
 					}
 				},
 				"url": "{{Base_url}}/login"
+			},
+			"response": []
+		},
+		{
+			"name": "CP03 - Listar usuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "reqres-free-v1",
+						"type": "text"
+					}
+				],
+				"url": "{{Base_url}}/users"
 			},
 			"response": []
 		}
