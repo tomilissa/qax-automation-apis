@@ -1,7 +1,7 @@
 # Exercise 1
 
 ### 📁 Archivo
-`Stage_1\Challenge\01_exercise_1`
+`Stage_1/Challenge/01_exercise_1`
 
 🗒️
 **Título de la entrega**: Gestión de Publicaciones y Comentarios
