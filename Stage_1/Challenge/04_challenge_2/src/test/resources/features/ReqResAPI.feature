@@ -2,17 +2,16 @@ Feature: Probar el Registro de usuario, login y listar usuarios usando la API re
 
 Background:
 * url baseUrl
-* def genEmail = function(usuario) { return usuario + karate.info.timestamp + '@reqres.in' }
-* def emailOK = genEmail('usuario')
+* header x-api-key = 'reqres-free-v1'
+
 
 
 Scenario: CP01 Registro de Usuario
 Given path '/register'
-And header x-api-key = 'reqres-free-v1'
 And request
           """
           {
-            "email": "#(emailOK)",
+            "email": "eve.holt@reqres.in",
             "password": "Password1234!"
           }
           """
@@ -21,20 +20,14 @@ Then status 200
 And match response.id == '#number'
 And match response.token == '#string'
 
-* def userId = response.id
-* def userToken = response.token
-
-* print 'Nuevo userId:', userId
-* print 'Nuevo userToken:', userToken
 
 
 Scenario: CP02 Login de Usuario
     Given path '/login'
-    And header x-api-key = 'reqres-free-v1'
     And request
           """
           {
-            "email": "#(emailOK)",
+            "email": "eve.holt@reqres.in",
             "password": "Password1234!"
           }
           """
@@ -43,11 +36,11 @@ Scenario: CP02 Login de Usuario
     And match response.token == '#string'
 
 Scenario: CP03 Listar usuarios
-Given path '/users/ + userId'
-And header x-api-key = 'reqres-free-v1'
+
+Given path '/users/4'
 When method get
 Then status 200
-And match response.data.id == userId
-And match response.data[0].email == emailOK
+And match response.data.id == 4
+And match response.data.email == "eve.holt@reqres.in"
 
     
