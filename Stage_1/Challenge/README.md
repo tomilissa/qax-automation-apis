@@ -29,13 +29,13 @@
   - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Exercise_1.md`
 
 ***Challenge 1***: 
-  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Challenge_1.md`
+  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/02_challenge_1/Test_Cases_Challenge_1.md`
 
 ***Exercise 2***: 
-  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Exercise_2.md`
+  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/03_exercise_2/Test_Cases_Exercise_2.md`
 
 ***Challenge 2***: 
-  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/01_exercise_1/Test_Cases_Challenge_2.md`    
+  - Por favor, revisar la documentación en el siguiente archivo: `Stage_1/Challenge/04_challenge_2/Test_Cases_Challenge_2.md`    
 
 
 
