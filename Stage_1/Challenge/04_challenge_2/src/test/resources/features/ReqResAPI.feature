@@ -20,6 +20,10 @@ Then status 200
 And match response.id == '#number'
 And match response.token == '#string'
 
+* def newId = response.id
+* def newToken = response.token
+
+
 
 
 Scenario: CP02 Login de Usuario
