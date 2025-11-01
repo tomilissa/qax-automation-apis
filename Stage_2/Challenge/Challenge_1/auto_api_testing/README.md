@@ -42,6 +42,7 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 #### **Scenario: CP01 - Crear nuevo post utilizando datos fijos**
 *   **Given:** la API está disponible en la base_Url
 *   **When:** realizo una petición POST para crear un nuevo post a "/posts" con el payload post-data:
+      
       """
       {
         "title": "Post desde archivo JSON",
@@ -49,6 +50,7 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
         "userId": 1
         }
       """
+      
 *   **Then:** el código de respuesta debe ser 201
 *   **And:** los datos deben coincidir con los enviados en el payload
 
@@ -72,7 +74,7 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
             "body": "Este es un comentario de prueba Tomas"
             }
         """
-        
+
 *   **Then:** el código de respuesta debe ser 201
 *   **And:** los datos deben coincidir con los enviados en el request
 
