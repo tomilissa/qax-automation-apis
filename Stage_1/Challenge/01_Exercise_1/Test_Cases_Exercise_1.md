@@ -36,13 +36,13 @@ Base_url: https://jsonplaceholder.typicode.com/
 #### **Scenario: CP01 - Crear un nuevo post exitosamente**
 *   **Given:** la API está disponible en la Base_url
 *   **When:** realizo una petición POST a "/posts" con el body:
-      """
-      {
+
+        {
         "title": "Mi primer post",
         "body": "Contenido de prueba Tomas",
         "userId": 1
-      }
-      """
+        }
+
 *   **Then:** el código de respuesta debe ser 201
 *   **And:** la respuesta debe contener un campo "id"
 *   **And:** los campos "title", "body" y "userId" deben coincidir con lo enviado
