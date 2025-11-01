@@ -59,7 +59,7 @@ Scenario: CP03 - Listar personajes indicando una página inexistente
 
    Given path '/characters'
    And header Content-Type = 'application/json; charset=utf-8'
-   And param page = '-1'
+   And param page = 'a'
    When method get
    Then status 200
    And match response ==
