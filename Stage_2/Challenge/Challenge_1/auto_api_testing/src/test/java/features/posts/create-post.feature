@@ -1,4 +1,4 @@
-Feature: Gestión de Publicaciones en JSONPlaceholder
+Feature: Crear posts con datos fijos y variables utilizando la API JSONPlaceholder
 
   Background:
     * url baseUrl
@@ -14,7 +14,7 @@ Feature: Gestión de Publicaciones en JSONPlaceholder
 
   Scenario: Crear un nuevo post con datos dinámicos
     # Genera el payload dinamico
-    * def postData = call read('classpath:helpers/build-payload.feature')
+    * def postData = call read('classpath:features/posts/helpers/build-payload.feature')
     * print postData.payload
     # 4. Ejecutar POST
     Given path 'posts'
