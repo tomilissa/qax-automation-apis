@@ -54,11 +54,13 @@ Additional data:
 #### **Scenario: CP02 - Login del usuario**
 *   **Given:** la API está disponible en la Base_url
 *   **When:** realizo una petición POST para loggear al usuario a "/login" con el body:
-      {
+
+        {
         "username": "tomilissa",
         "email": "tomi.lissarrague@gmail.com",
         "password": "tolissa200"
-      }
+        }
+
 *   **Then:** el código de respuesta debe ser 200
 *   **And:** la respuesta debe contener un token para autenticación.
 
