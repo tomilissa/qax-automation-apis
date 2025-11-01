@@ -37,7 +37,7 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 
 ## ✅ Casos de Prueba
 
-### 🖼️ Feature - Crear nuevo Post:
+### 🗒️ Feature - Crear nuevo Post:
 
 #### **Scenario: CP01 - Crear nuevo post utilizando datos fijos**
 *   **Given:** la API está disponible en la base_Url
@@ -58,7 +58,7 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 *   **Then:** el código de respuesta debe ser 201
 *   **And:** los datos deben coincidir con los enviados en el payload
 
-### 🖼️ Feature - Crear comentario y listar comentarios:
+### 🗒️ Feature - Crear comentario y listar comentarios:
 
 #### **Scenario: CP01 - Crear nuevo comentario**
 *   **Given:** la API está disponible en la base_Url
