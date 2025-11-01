@@ -67,7 +67,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/characters?page=-1",
+					"raw": "{{baseUrl}}/characters?page=a",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -77,7 +77,7 @@
 					"query": [
 						{
 							"key": "page",
-							"value": "-1"
+							"value": "a"
 						}
 					]
 				}
