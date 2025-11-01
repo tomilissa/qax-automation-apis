@@ -44,13 +44,13 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 *   **When:** realizo una petición POST para crear un nuevo post a "/posts" con el payload post-data:
       
       """
-      {
-        "title": "Post desde archivo JSON",
-        "body": "Contenido del post cargado desde post-data.json",
-        "userId": 1
-        }
+          {
+          "title": "Post desde archivo JSON",
+          "body": "Contenido del post cargado desde post-data.json",
+          "userId": 1
+          }
       """
-      
+
 *   **Then:** el código de respuesta debe ser 201
 *   **And:** los datos deben coincidir con los enviados en el payload
 
