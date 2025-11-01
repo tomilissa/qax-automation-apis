@@ -43,9 +43,8 @@ Additional data:
 *   **When:** realizo una petición POST para registrar un nuevo usuario a "/register" con el body:
 
         {
-        "username": "tomilissa",
-        "email": "tomi.lissarrague@gmail.com",
-        "password": "tolissa200"
+        "email": "eve.holt@reqres.in",
+        "password": "anypassword"
         }
 
 *   **Then:** el código de respuesta debe ser 200
@@ -56,9 +55,8 @@ Additional data:
 *   **When:** realizo una petición POST para loggear al usuario a "/login" con el body:
 
         {
-        "username": "tomilissa",
-        "email": "tomi.lissarrague@gmail.com",
-        "password": "tolissa200"
+        "email": "eve.holt@reqres.in",
+        "password": "anypassword"
         }
 
 *   **Then:** el código de respuesta debe ser 200
