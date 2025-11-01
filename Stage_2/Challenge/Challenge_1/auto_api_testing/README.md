@@ -23,6 +23,8 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 ### 2. Ejecutar pruebas con Maven
    
     mvn test -Dtest=CreatePostRunner
+    mvn test -Dtest=CommentsRunner
+
 
 ### 3. Revisar reportes
 
@@ -43,13 +45,11 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 *   **Given:** la API está disponible en la base_Url
 *   **When:** realizo una petición POST para crear un nuevo post a "/posts" con el payload post-data:
       
-      """
           {
           "title": "Post desde archivo JSON",
           "body": "Contenido del post cargado desde post-data.json",
           "userId": 1
           }
-      """
 
 *   **Then:** el código de respuesta debe ser 201
 *   **And:** los datos deben coincidir con los enviados en el payload
@@ -81,7 +81,7 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 
 #### **Scenario: CP02 - Listar comentarios**
 *   **Given:** la API está disponible en la base_Url
-*   **When:** realizo una petición GET a "/comments" para obtener los comentarios asociados a un post especifico utilizando el postID:
+*   **When:** realizo una petición GET a "/comments" para obtener los comentarios asociados a un post especifico utilizando el postID.
 *   **Then:** el código de respuesta debe ser 200
 *   **And:** la respuesta no debe estar vacía
 *   **And:** cada comentario debe contener los campos postId, id, name, email, body

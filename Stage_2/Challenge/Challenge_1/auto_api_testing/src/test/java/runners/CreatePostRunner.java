@@ -6,6 +6,6 @@ public class CreatePostRunner {
 
     @Karate.Test
     Karate testCreatePost() {
-        return Karate.run("classpath:features/posts");
+        return Karate.run("classpath:features/posts/create-post.feature");
     }
 }

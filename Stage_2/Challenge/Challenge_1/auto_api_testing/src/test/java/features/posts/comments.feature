@@ -25,4 +25,4 @@ Feature: Validar la creación y listado de comentarios en la API JSONPlaceholder
     When method get
     Then status 200
     And assert response.length > 0
-    And match each response == { postId: '#notnull', id: '#notnull', name: '#notnull', email: '#string', body: '#notnull' }
+    And match each response == { postId: '#notnull', id: '#notnull', name: '#notnull', email: '#@', body: '#notnull' }
