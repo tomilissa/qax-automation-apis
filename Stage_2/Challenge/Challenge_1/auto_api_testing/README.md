@@ -63,6 +63,7 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
 #### **Scenario: CP01 - Crear nuevo comentario**
 *   **Given:** la API está disponible en la base_Url
 *   **When:** realizo una petición POST para crear un nuevo comment a "/comments" con el request:
+        
         """
             {
             "postId": 1,
@@ -70,8 +71,8 @@ Este proyecto es un ejercicio práctico para aprender la **estructura básica de
             "email": "tomas@email.com",
             "body": "Este es un comentario de prueba Tomas"
             }
-
         """
+        
 *   **Then:** el código de respuesta debe ser 201
 *   **And:** los datos deben coincidir con los enviados en el request
 
