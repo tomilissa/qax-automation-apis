@@ -48,7 +48,7 @@
 
 #### **Scenario: CP04 - Listar personajes indicando una página inválida**
 *   **Given:** la API está disponible en la base_Url
-*   **When:** realizo una petición GET a "/characters" indicando una página inválida en el query param (?page={-1})
+*   **When:** realizo una petición GET a "/characters" indicando una página inválida en el query param (?page={a})
 *   **Then:** el código de respuesta debe ser 400
 *   **And:** el mensaje de error debe ser "Invalid page parameter"
 
