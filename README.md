@@ -1,13 +1,13 @@
-> # Portafolio de Automatización de Pruebas - Tomás Lissarrague
->
-> Este repositorio alberga los proyectos de automatización de pruebas de API que desarrollé durante la mentoría QA Pro Level de QAX. 
+# Portafolio de Automatización de Pruebas - Tomás Lissarrague
+
+Este repositorio alberga los proyectos de automatización de pruebas de API que desarrollé durante la mentoría QA Pro Level de QAX. 
 Mi objetivo es demostrar mis habilidades para crear, ejecutar y mantener tests robustos y confiables, garantizando la mejor calidad. 
->
-> ### Tecnologías que utilizo 
-> - **Lenguaje:** Java, JavaScript 
-> - **Frameworks de Automatización:** Karate 
-> - **Gestión de Pruebas:** JUnit 
-> - **Herramientas Adicionales:** Postman, Git, Maven
+
+ ### Tecnologías que utilizo 
+ - **Lenguaje:** Java, JavaScript 
+ - **Frameworks de Automatización:** Karate 
+ - **Gestión de Pruebas:** JUnit 
+ - **Herramientas Adicionales:** Postman, Git, Maven
 >
 > ### Proyectos
 >
