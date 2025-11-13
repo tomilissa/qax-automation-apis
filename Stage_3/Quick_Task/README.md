@@ -1,4 +1,4 @@
-# Quick Task Stage 3 - Validar peticiones HTTP PUT & PATCH y hacer validaciones numericas
+# Quick Task Stage 3 - Validar peticiones HTTP PUT & PATCH y hacer validaciones numéricas
 
 ## Validar peticiones HTTP PUT & PATCH
 
