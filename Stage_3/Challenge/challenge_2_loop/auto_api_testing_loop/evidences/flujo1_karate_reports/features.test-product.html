@@ -1,0 +1,4772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b4b14dd4-1ac3-4918-ae0f-7dde44194a7b",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.test-product</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-11-19 09:15:51 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:102]"><span>[1.1:102]</span> <span>Listado completo (GET) + PATCH parcial y verificación</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:105]"><span>[1.2:105]</span> <span>Listado completo (GET) + PATCH parcial y verificación</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:108]"><span>[1.3:108]</span> <span>Listado completo (GET) + PATCH parcial y verificación</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/test-product.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validar listado de productos y realizar PATCH con DDT</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:102]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:102]</span>
+                <span class="scenario-name">Listado completo (GET) + PATCH parcial y verificación</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3312</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:102]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { &#39;Content-Type&#39;: &#39;application/json; charset=UTF-8&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 1) GET listado completo ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1428</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">09:15:44.606 request:
+1 &gt; GET https://api.restful-api.dev/objects
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.restful-api.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:15:45.691 response time in milliseconds: 1077
+1 &lt; 200
+1 &lt; Date: Wed, 19 Nov 2025 12:15:47 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=299,cfOrigin;dur=78
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=Rq4q4xl6vCwOzJbk6rDZyOucvdtgWtCNvUgoP2Lx9Jqyz0ONAzPuPL5ZdJ4GQJFVJl1GxrhK2d%2B3uXPpXoxgXNkjCqOVuzimVDrwaYuvqQoqda4%3D&quot;}]}
+1 &lt; CF-RAY: 9a0fa28daec2ca87-GIG
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Google Pixel 6 Pro&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity&quot;: &quot;128 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,
+    &quot;data&quot;: null
+  },
+  {
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Pro Max&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity GB&quot;: 512
+    }
+  },
+  {
+    &quot;id&quot;: &quot;4&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 11, 64GB&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 389.99,
+      &quot;color&quot;: &quot;Purple&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;5&quot;,
+    &quot;name&quot;: &quot;Samsung Galaxy Z Fold2&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 689.99,
+      &quot;color&quot;: &quot;Brown&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;6&quot;,
+    &quot;name&quot;: &quot;Apple AirPods&quot;,
+    &quot;data&quot;: {
+      &quot;generation&quot;: &quot;3rd&quot;,
+      &quot;price&quot;: 120
+    }
+  },
+  {
+    &quot;id&quot;: &quot;7&quot;,
+    &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2019,
+      &quot;price&quot;: 1849.99,
+      &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
+      &quot;Hard disk size&quot;: &quot;1 TB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;8&quot;,
+    &quot;name&quot;: &quot;Apple Watch Series 8&quot;,
+    &quot;data&quot;: {
+      &quot;Strap Colour&quot;: &quot;Elderberry&quot;,
+      &quot;Case Size&quot;: &quot;41mm&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;9&quot;,
+    &quot;name&quot;: &quot;Beats Studio3 Wireless&quot;,
+    &quot;data&quot;: {
+      &quot;Color&quot;: &quot;Red&quot;,
+      &quot;Description&quot;: &quot;High-performance wireless noise cancelling headphones&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;10&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;64 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;11&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;254 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;12&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;419.99&quot;,
+      &quot;Capacity&quot;: &quot;64 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;13&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;519.99&quot;,
+      &quot;Capacity&quot;: &quot;256 GB&quot;
+    }
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que la respuesta es una lista (posiblemente vacía)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def products = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que todas las entradas tienen la estructura esperada y data sea un objeto</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* match each products contains { id: &#39;#string&#39;, name: &#39;#string&#39;, data: &#39;#object&#39; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que todas las entradas tienen la estructura esperada y data sea un objeto opcional, es decir puede venir null</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each products contains { id: &#39;#string&#39;, name: &#39;#string&#39;, data: &#39;##object&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Reglas de integridad con loops y condicionales</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 1. IDs únicos y numéricos</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ids = products.map(x =&gt; x.id)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">71</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uniqueIds = karate.distinct(ids)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (ids.length != uniqueIds.length) karate.fail(&#39;❌ IDs duplicados en listado&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(ids, function(v){ if (!/^[0-9]+$/.test(v)) karate.fail(&#39;❌ ID no numérico: &#39; + v) })</span>
+      </div>
+    </div>
+    <div class="time-cell passed">144</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 2. data.price &gt; 0 cuando price es #number</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataPrice =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.30">function(item){
+  if (item.data &amp;&amp; typeof item.data.price === &#39;number&#39; &amp;&amp; !(item.data.price &gt; 0)) {
+    karate.fail(&#39;❌ price inválido para id=&#39; + item.id + &#39; -&gt; &#39; + item.data.price);
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(products, dataPrice)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 3. Campos numéricos esperados si existen (capacity GB, Screen size)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataCapacityScreenSize =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.41">function(item){
+  if (item.data &amp;&amp; item.data[&#39;capacity GB&#39;] !== undefined &amp;&amp; typeof item.data[&#39;capacity GB&#39;] !== &#39;number&#39;) {
+    karate.fail(&#39;❌ capacity GB debe ser number en id=&#39; + item.id);
+  }
+  if (item.data &amp;&amp; item.data[&#39;Screen size&#39;] !== undefined &amp;&amp; typeof item.data[&#39;Screen size&#39;] !== &#39;number&#39;) {
+    karate.fail(&#39;❌ Screen size debe ser number en id=&#39; + item.id);
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(products,dataCapacityScreenSize)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 2) PATCH parcial al producto indicado ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Localiza el producto objetivo antes del parche (para comparar luego)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def targetId = &#39;ff8081819782e69e019a546020375f4f&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def before = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Producto ANTES del PATCH =&gt;&#39;, before</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.60">09:15:46.003 [print] Producto ANTES del PATCH =&gt; [
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Google Pixel 6 Pro&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity&quot;: &quot;128 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,
+    &quot;data&quot;: null
+  },
+  {
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Pro Max&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity GB&quot;: 512
+    }
+  },
+  {
+    &quot;id&quot;: &quot;4&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 11, 64GB&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 389.99,
+      &quot;color&quot;: &quot;Purple&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;5&quot;,
+    &quot;name&quot;: &quot;Samsung Galaxy Z Fold2&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 689.99,
+      &quot;color&quot;: &quot;Brown&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;6&quot;,
+    &quot;name&quot;: &quot;Apple AirPods&quot;,
+    &quot;data&quot;: {
+      &quot;generation&quot;: &quot;3rd&quot;,
+      &quot;price&quot;: 120
+    }
+  },
+  {
+    &quot;id&quot;: &quot;7&quot;,
+    &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2019,
+      &quot;price&quot;: 1849.99,
+      &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
+      &quot;Hard disk size&quot;: &quot;1 TB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;8&quot;,
+    &quot;name&quot;: &quot;Apple Watch Series 8&quot;,
+    &quot;data&quot;: {
+      &quot;Strap Colour&quot;: &quot;Elderberry&quot;,
+      &quot;Case Size&quot;: &quot;41mm&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;9&quot;,
+    &quot;name&quot;: &quot;Beats Studio3 Wireless&quot;,
+    &quot;data&quot;: {
+      &quot;Color&quot;: &quot;Red&quot;,
+      &quot;Description&quot;: &quot;High-performance wireless noise cancelling headphones&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;10&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;64 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;11&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;254 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;12&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;419.99&quot;,
+      &quot;Capacity&quot;: &quot;64 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;13&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;519.99&quot;,
+      &quot;Capacity&quot;: &quot;256 GB&quot;
+    }
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Construcción dinámica del payload PATCH:</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># - Si el campo a parchear es en &#39;data&#39;, se envía { data: { &lt;clave&gt;: &lt;valor&gt; } }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># - Si es &#39;name&#39;, se envía { name: &lt;valor&gt; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchField = &#39;name&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchValue = &#39;Apple MacBook X&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.66">function(field, value){
+  if (field === &#39;name&#39;) return { name: value };
+  var o = {};
+  o[field] = value;
+  return { data: o };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = patchBody(patchField, patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;PATCH body =&gt;&#39;, body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.76">09:15:46.021 [print] PATCH body =&gt; {
+  &quot;name&quot;: &quot;Apple MacBook X&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;, targetId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">684</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.80">09:15:46.092 request:
+2 &gt; PATCH https://api.restful-api.dev/objects/ff8081819782e69e019a546020375f4f
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 26
+2 &gt; Host: api.restful-api.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+2 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;name&quot;: &quot;Apple MacBook X&quot;
+}
+
+
+09:15:46.707 response time in milliseconds: 611
+2 &lt; 200
+2 &lt; Date: Wed, 19 Nov 2025 12:15:48 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Server: cloudflare
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+2 &lt; Server-Timing: cfEdge;dur=285,cfOrigin;dur=83
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=e0ZACiZKo0W4RjEQQCJkMxtYa%2Ba7rmS4ihUvChiDpgolqoTlp2l2AwV460Nm%2B4IIClweACoShAPSdmFIQFMlOYEaUtjz%2Bgtch0hJwhuWYseSPOA%3D&quot;}]}
+2 &lt; CF-RAY: 9a0fa2945a253214-GIG
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;id&quot;: &quot;ff8081819782e69e019a546020375f4f&quot;,
+  &quot;name&quot;: &quot;Apple MacBook X&quot;,
+  &quot;updatedAt&quot;: &quot;2025-11-19T12:15:48.092+00:00&quot;,
+  &quot;data&quot;: {
+    &quot;year&quot;: 2021,
+    &quot;price&quot;: 1000,
+    &quot;CPUmodel&quot;: &quot;Intel i5&quot;,
+    &quot;hardDiskSize&quot;: &quot;1 TB&quot;
+  }
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 3) Verificación por GET del recurso parchado ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param id = targetId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">805</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.86">09:15:46.725 request:
+3 &gt; GET https://api.restful-api.dev/objects?id=ff8081819782e69e019a546020375f4f
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Host: api.restful-api.dev
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+09:15:47.520 response time in milliseconds: 792
+3 &lt; 200
+3 &lt; Date: Wed, 19 Nov 2025 12:15:49 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Server: cloudflare
+3 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; cf-cache-status: DYNAMIC
+3 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+3 &lt; Server-Timing: cfEdge;dur=518,cfOrigin;dur=64
+3 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=dZ%2FXCv9FtjVc%2FWPBDvgRmpnSUSLmGV1QtWyfOV6sCBovtiPsoXeM5vUvL0HGDIIe1wTCPNWn7U35t0uljGbjkf0J6Mc6nIDQvcPjsVzwdXmD&quot;}]}
+3 &lt; CF-RAY: 9a0fa2985b48b51a-SCL
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: &quot;ff8081819782e69e019a546020375f4f&quot;,
+    &quot;name&quot;: &quot;Apple MacBook X&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2021,
+      &quot;price&quot;: 1000,
+      &quot;CPUmodel&quot;: &quot;Intel i5&quot;,
+      &quot;hardDiskSize&quot;: &quot;1 TB&quot;
+    }
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == &#39;#[1]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def after = response[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validación del valor parchado</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField === &#39;name&#39;) karate.match(after.name, patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField !== &#39;name&#39;) karate.match(after.data[patchField], patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que lo no parchado se conserve (si existía)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField !== &#39;name&#39; &amp;&amp; before.name) karate.match(after.name, before.name)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField === &#39;name&#39; &amp;&amp; before.data) karate.match(after.data, &#39;#object&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:105]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:105]</span>
+                <span class="scenario-name">Listado completo (GET) + PATCH parcial y verificación</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2175</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:105]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { &#39;Content-Type&#39;: &#39;application/json; charset=UTF-8&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 1) GET listado completo ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">741</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.10">09:15:47.594 request:
+1 &gt; GET https://api.restful-api.dev/objects
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.restful-api.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:15:48.331 response time in milliseconds: 735
+1 &lt; 200
+1 &lt; Date: Wed, 19 Nov 2025 12:15:49 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=475,cfOrigin;dur=62
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=I768Egu1Q59r93%2BbrjCGDPgrGAPD6GBANpmjTES4JrTXZwfwYUnOM5aTmIMPTBsij9dfytQmItdFGLEZCcmrvTDDHoQkERkp5MYLmEyvrkgY&quot;}]}
+1 &lt; CF-RAY: 9a0fa29d9a34eabb-SCL
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Google Pixel 6 Pro&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity&quot;: &quot;128 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,
+    &quot;data&quot;: null
+  },
+  {
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Pro Max&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity GB&quot;: 512
+    }
+  },
+  {
+    &quot;id&quot;: &quot;4&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 11, 64GB&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 389.99,
+      &quot;color&quot;: &quot;Purple&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;5&quot;,
+    &quot;name&quot;: &quot;Samsung Galaxy Z Fold2&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 689.99,
+      &quot;color&quot;: &quot;Brown&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;6&quot;,
+    &quot;name&quot;: &quot;Apple AirPods&quot;,
+    &quot;data&quot;: {
+      &quot;generation&quot;: &quot;3rd&quot;,
+      &quot;price&quot;: 120
+    }
+  },
+  {
+    &quot;id&quot;: &quot;7&quot;,
+    &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2019,
+      &quot;price&quot;: 1849.99,
+      &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
+      &quot;Hard disk size&quot;: &quot;1 TB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;8&quot;,
+    &quot;name&quot;: &quot;Apple Watch Series 8&quot;,
+    &quot;data&quot;: {
+      &quot;Strap Colour&quot;: &quot;Elderberry&quot;,
+      &quot;Case Size&quot;: &quot;41mm&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;9&quot;,
+    &quot;name&quot;: &quot;Beats Studio3 Wireless&quot;,
+    &quot;data&quot;: {
+      &quot;Color&quot;: &quot;Red&quot;,
+      &quot;Description&quot;: &quot;High-performance wireless noise cancelling headphones&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;10&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;64 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;11&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;254 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;12&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;419.99&quot;,
+      &quot;Capacity&quot;: &quot;64 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;13&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;519.99&quot;,
+      &quot;Capacity&quot;: &quot;256 GB&quot;
+    }
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que la respuesta es una lista (posiblemente vacía)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def products = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que todas las entradas tienen la estructura esperada y data sea un objeto</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* match each products contains { id: &#39;#string&#39;, name: &#39;#string&#39;, data: &#39;#object&#39; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que todas las entradas tienen la estructura esperada y data sea un objeto opcional, es decir puede venir null</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each products contains { id: &#39;#string&#39;, name: &#39;#string&#39;, data: &#39;##object&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Reglas de integridad con loops y condicionales</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 1. IDs únicos y numéricos</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ids = products.map(x =&gt; x.id)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uniqueIds = karate.distinct(ids)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (ids.length != uniqueIds.length) karate.fail(&#39;❌ IDs duplicados en listado&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(ids, function(v){ if (!/^[0-9]+$/.test(v)) karate.fail(&#39;❌ ID no numérico: &#39; + v) })</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 2. data.price &gt; 0 cuando price es #number</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataPrice =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.30">function(item){
+  if (item.data &amp;&amp; typeof item.data.price === &#39;number&#39; &amp;&amp; !(item.data.price &gt; 0)) {
+    karate.fail(&#39;❌ price inválido para id=&#39; + item.id + &#39; -&gt; &#39; + item.data.price);
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(products, dataPrice)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 3. Campos numéricos esperados si existen (capacity GB, Screen size)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataCapacityScreenSize =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.41">function(item){
+  if (item.data &amp;&amp; item.data[&#39;capacity GB&#39;] !== undefined &amp;&amp; typeof item.data[&#39;capacity GB&#39;] !== &#39;number&#39;) {
+    karate.fail(&#39;❌ capacity GB debe ser number en id=&#39; + item.id);
+  }
+  if (item.data &amp;&amp; item.data[&#39;Screen size&#39;] !== undefined &amp;&amp; typeof item.data[&#39;Screen size&#39;] !== &#39;number&#39;) {
+    karate.fail(&#39;❌ Screen size debe ser number en id=&#39; + item.id);
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(products,dataCapacityScreenSize)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 2) PATCH parcial al producto indicado ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Localiza el producto objetivo antes del parche (para comparar luego)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def targetId = &#39;ff8081819782e69e019a546020375f4f&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def before = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Producto ANTES del PATCH =&gt;&#39;, before</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.60">09:15:48.370 [print] Producto ANTES del PATCH =&gt; [
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Google Pixel 6 Pro&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity&quot;: &quot;128 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,
+    &quot;data&quot;: null
+  },
+  {
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Pro Max&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity GB&quot;: 512
+    }
+  },
+  {
+    &quot;id&quot;: &quot;4&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 11, 64GB&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 389.99,
+      &quot;color&quot;: &quot;Purple&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;5&quot;,
+    &quot;name&quot;: &quot;Samsung Galaxy Z Fold2&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 689.99,
+      &quot;color&quot;: &quot;Brown&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;6&quot;,
+    &quot;name&quot;: &quot;Apple AirPods&quot;,
+    &quot;data&quot;: {
+      &quot;generation&quot;: &quot;3rd&quot;,
+      &quot;price&quot;: 120
+    }
+  },
+  {
+    &quot;id&quot;: &quot;7&quot;,
+    &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2019,
+      &quot;price&quot;: 1849.99,
+      &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
+      &quot;Hard disk size&quot;: &quot;1 TB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;8&quot;,
+    &quot;name&quot;: &quot;Apple Watch Series 8&quot;,
+    &quot;data&quot;: {
+      &quot;Strap Colour&quot;: &quot;Elderberry&quot;,
+      &quot;Case Size&quot;: &quot;41mm&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;9&quot;,
+    &quot;name&quot;: &quot;Beats Studio3 Wireless&quot;,
+    &quot;data&quot;: {
+      &quot;Color&quot;: &quot;Red&quot;,
+      &quot;Description&quot;: &quot;High-performance wireless noise cancelling headphones&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;10&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;64 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;11&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;254 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;12&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;419.99&quot;,
+      &quot;Capacity&quot;: &quot;64 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;13&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;519.99&quot;,
+      &quot;Capacity&quot;: &quot;256 GB&quot;
+    }
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Construcción dinámica del payload PATCH:</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># - Si el campo a parchear es en &#39;data&#39;, se envía { data: { &lt;clave&gt;: &lt;valor&gt; } }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># - Si es &#39;name&#39;, se envía { name: &lt;valor&gt; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchField = &#39;price&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchValue = 399.99</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.66">function(field, value){
+  if (field === &#39;name&#39;) return { name: value };
+  var o = {};
+  o[field] = value;
+  return { data: o };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = patchBody(patchField, patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;PATCH body =&gt;&#39;, body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.76">09:15:48.378 [print] PATCH body =&gt; {
+  &quot;data&quot;: {
+    &quot;price&quot;: 399.99
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;, targetId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">571</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.80">09:15:48.382 request:
+2 &gt; PATCH https://api.restful-api.dev/objects/ff8081819782e69e019a546020375f4f
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 25
+2 &gt; Host: api.restful-api.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+2 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;data&quot;: {
+    &quot;price&quot;: 399.99
+  }
+}
+
+
+09:15:48.948 response time in milliseconds: 564
+2 &lt; 200
+2 &lt; Date: Wed, 19 Nov 2025 12:15:50 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Server: cloudflare
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+2 &lt; Server-Timing: cfEdge;dur=294,cfOrigin;dur=75
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=30fOMDSG%2FERC3SNGqn%2BzqiJ48Eac1e3f1s%2BI%2FREPNRzfLChCAZlmnW4TKytAVqagk3wovt%2FZQP4V6TyIje%2FAp%2FLzxZTe%2F4ULmD0Bwf7ytJDM0ec%3D&quot;}]}
+2 &lt; CF-RAY: 9a0fa2a2afaacb39-GIG
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;id&quot;: &quot;ff8081819782e69e019a546020375f4f&quot;,
+  &quot;name&quot;: &quot;Apple MacBook X&quot;,
+  &quot;updatedAt&quot;: &quot;2025-11-19T12:15:50.384+00:00&quot;,
+  &quot;data&quot;: {
+    &quot;price&quot;: 399.99
+  }
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 3) Verificación por GET del recurso parchado ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param id = targetId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">811</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.86">09:15:48.956 request:
+3 &gt; GET https://api.restful-api.dev/objects?id=ff8081819782e69e019a546020375f4f
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Host: api.restful-api.dev
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+09:15:49.762 response time in milliseconds: 805
+3 &lt; 200
+3 &lt; Date: Wed, 19 Nov 2025 12:15:51 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Server: cloudflare
+3 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; cf-cache-status: DYNAMIC
+3 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+3 &lt; Server-Timing: cfEdge;dur=493,cfOrigin;dur=64
+3 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=90GyaOOg4rjtTgV%2BwwIoEEKHuAYz066sgjs1dQ68I%2F7jxocOJIWEiSgWL8JL7x03LSFUHfWtpO8Kik2DaEFcNG3cOHqEullVF%2BpYi7f6kfqe7Z0%3D&quot;}]}
+3 &lt; CF-RAY: 9a0fa2a62da019a4-SCL
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: &quot;ff8081819782e69e019a546020375f4f&quot;,
+    &quot;name&quot;: &quot;Apple MacBook X&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 399.99
+    }
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == &#39;#[1]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def after = response[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validación del valor parchado</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField === &#39;name&#39;) karate.match(after.name, patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField !== &#39;name&#39;) karate.match(after.data[patchField], patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que lo no parchado se conserve (si existía)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField !== &#39;name&#39; &amp;&amp; before.name) karate.match(after.name, before.name)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField === &#39;name&#39; &amp;&amp; before.data) karate.match(after.data, &#39;#object&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:108]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:108]</span>
+                <span class="scenario-name">Listado completo (GET) + PATCH parcial y verificación</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2104</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:108]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { &#39;Content-Type&#39;: &#39;application/json; charset=UTF-8&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 1) GET listado completo ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">589</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.10">09:15:49.798 request:
+1 &gt; GET https://api.restful-api.dev/objects
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.restful-api.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:15:50.382 response time in milliseconds: 581
+1 &lt; 200
+1 &lt; Date: Wed, 19 Nov 2025 12:15:51 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=318,cfOrigin;dur=76
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=sVO5UhRHoJkCcB%2FnFrpVsZts4SO0EIyGvEWLFaWuoWuZuhtLs%2Fz5Cq%2FSUKNK2O7uF3YdTCo1ZWyhnfcRwDVT2I28RipEgPyYfB20KgdHQHTl&quot;}]}
+1 &lt; CF-RAY: 9a0fa2ab6e75644e-GIG
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Google Pixel 6 Pro&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity&quot;: &quot;128 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,
+    &quot;data&quot;: null
+  },
+  {
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Pro Max&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity GB&quot;: 512
+    }
+  },
+  {
+    &quot;id&quot;: &quot;4&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 11, 64GB&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 389.99,
+      &quot;color&quot;: &quot;Purple&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;5&quot;,
+    &quot;name&quot;: &quot;Samsung Galaxy Z Fold2&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 689.99,
+      &quot;color&quot;: &quot;Brown&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;6&quot;,
+    &quot;name&quot;: &quot;Apple AirPods&quot;,
+    &quot;data&quot;: {
+      &quot;generation&quot;: &quot;3rd&quot;,
+      &quot;price&quot;: 120
+    }
+  },
+  {
+    &quot;id&quot;: &quot;7&quot;,
+    &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2019,
+      &quot;price&quot;: 1849.99,
+      &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
+      &quot;Hard disk size&quot;: &quot;1 TB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;8&quot;,
+    &quot;name&quot;: &quot;Apple Watch Series 8&quot;,
+    &quot;data&quot;: {
+      &quot;Strap Colour&quot;: &quot;Elderberry&quot;,
+      &quot;Case Size&quot;: &quot;41mm&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;9&quot;,
+    &quot;name&quot;: &quot;Beats Studio3 Wireless&quot;,
+    &quot;data&quot;: {
+      &quot;Color&quot;: &quot;Red&quot;,
+      &quot;Description&quot;: &quot;High-performance wireless noise cancelling headphones&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;10&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;64 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;11&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;254 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;12&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;419.99&quot;,
+      &quot;Capacity&quot;: &quot;64 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;13&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;519.99&quot;,
+      &quot;Capacity&quot;: &quot;256 GB&quot;
+    }
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que la respuesta es una lista (posiblemente vacía)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def products = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que todas las entradas tienen la estructura esperada y data sea un objeto</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* match each products contains { id: &#39;#string&#39;, name: &#39;#string&#39;, data: &#39;#object&#39; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que todas las entradas tienen la estructura esperada y data sea un objeto opcional, es decir puede venir null</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each products contains { id: &#39;#string&#39;, name: &#39;#string&#39;, data: &#39;##object&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Reglas de integridad con loops y condicionales</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 1. IDs únicos y numéricos</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ids = products.map(x =&gt; x.id)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uniqueIds = karate.distinct(ids)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (ids.length != uniqueIds.length) karate.fail(&#39;❌ IDs duplicados en listado&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(ids, function(v){ if (!/^[0-9]+$/.test(v)) karate.fail(&#39;❌ ID no numérico: &#39; + v) })</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 2. data.price &gt; 0 cuando price es #number</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataPrice =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.30">function(item){
+  if (item.data &amp;&amp; typeof item.data.price === &#39;number&#39; &amp;&amp; !(item.data.price &gt; 0)) {
+    karate.fail(&#39;❌ price inválido para id=&#39; + item.id + &#39; -&gt; &#39; + item.data.price);
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(products, dataPrice)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 3. Campos numéricos esperados si existen (capacity GB, Screen size)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataCapacityScreenSize =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.41">function(item){
+  if (item.data &amp;&amp; item.data[&#39;capacity GB&#39;] !== undefined &amp;&amp; typeof item.data[&#39;capacity GB&#39;] !== &#39;number&#39;) {
+    karate.fail(&#39;❌ capacity GB debe ser number en id=&#39; + item.id);
+  }
+  if (item.data &amp;&amp; item.data[&#39;Screen size&#39;] !== undefined &amp;&amp; typeof item.data[&#39;Screen size&#39;] !== &#39;number&#39;) {
+    karate.fail(&#39;❌ Screen size debe ser number en id=&#39; + item.id);
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(products,dataCapacityScreenSize)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 2) PATCH parcial al producto indicado ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Localiza el producto objetivo antes del parche (para comparar luego)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def targetId = &#39;ff8081819782e69e019a546020375f4f&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def before = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Producto ANTES del PATCH =&gt;&#39;, before</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.60">09:15:50.462 [print] Producto ANTES del PATCH =&gt; [
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Google Pixel 6 Pro&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity&quot;: &quot;128 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,
+    &quot;data&quot;: null
+  },
+  {
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 12 Pro Max&quot;,
+    &quot;data&quot;: {
+      &quot;color&quot;: &quot;Cloudy White&quot;,
+      &quot;capacity GB&quot;: 512
+    }
+  },
+  {
+    &quot;id&quot;: &quot;4&quot;,
+    &quot;name&quot;: &quot;Apple iPhone 11, 64GB&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 389.99,
+      &quot;color&quot;: &quot;Purple&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;5&quot;,
+    &quot;name&quot;: &quot;Samsung Galaxy Z Fold2&quot;,
+    &quot;data&quot;: {
+      &quot;price&quot;: 689.99,
+      &quot;color&quot;: &quot;Brown&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;6&quot;,
+    &quot;name&quot;: &quot;Apple AirPods&quot;,
+    &quot;data&quot;: {
+      &quot;generation&quot;: &quot;3rd&quot;,
+      &quot;price&quot;: 120
+    }
+  },
+  {
+    &quot;id&quot;: &quot;7&quot;,
+    &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2019,
+      &quot;price&quot;: 1849.99,
+      &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
+      &quot;Hard disk size&quot;: &quot;1 TB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;8&quot;,
+    &quot;name&quot;: &quot;Apple Watch Series 8&quot;,
+    &quot;data&quot;: {
+      &quot;Strap Colour&quot;: &quot;Elderberry&quot;,
+      &quot;Case Size&quot;: &quot;41mm&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;9&quot;,
+    &quot;name&quot;: &quot;Beats Studio3 Wireless&quot;,
+    &quot;data&quot;: {
+      &quot;Color&quot;: &quot;Red&quot;,
+      &quot;Description&quot;: &quot;High-performance wireless noise cancelling headphones&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;10&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;64 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;11&quot;,
+    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
+    &quot;data&quot;: {
+      &quot;Capacity&quot;: &quot;254 GB&quot;,
+      &quot;Screen size&quot;: 7.9
+    }
+  },
+  {
+    &quot;id&quot;: &quot;12&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;419.99&quot;,
+      &quot;Capacity&quot;: &quot;64 GB&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;13&quot;,
+    &quot;name&quot;: &quot;Apple iPad Air&quot;,
+    &quot;data&quot;: {
+      &quot;Generation&quot;: &quot;4th&quot;,
+      &quot;Price&quot;: &quot;519.99&quot;,
+      &quot;Capacity&quot;: &quot;256 GB&quot;
+    }
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Construcción dinámica del payload PATCH:</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># - Si el campo a parchear es en &#39;data&#39;, se envía { data: { &lt;clave&gt;: &lt;valor&gt; } }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># - Si es &#39;name&#39;, se envía { name: &lt;valor&gt; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchField = &#39;capacity GB&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchValue = 1024</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patchBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.66">function(field, value){
+  if (field === &#39;name&#39;) return { name: value };
+  var o = {};
+  o[field] = value;
+  return { data: o };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = patchBody(patchField, patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;PATCH body =&gt;&#39;, body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.76">09:15:50.467 [print] PATCH body =&gt; {
+  &quot;data&quot;: {
+    &quot;capacity GB&quot;: 1024
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;, targetId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">732</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.80">09:15:50.470 request:
+2 &gt; PATCH https://api.restful-api.dev/objects/ff8081819782e69e019a546020375f4f
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 29
+2 &gt; Host: api.restful-api.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+2 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;data&quot;: {
+    &quot;capacity GB&quot;: 1024
+  }
+}
+
+
+09:15:51.200 response time in milliseconds: 728
+2 &lt; 200
+2 &lt; Date: Wed, 19 Nov 2025 12:15:52 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Server: cloudflare
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+2 &lt; Server-Timing: cfEdge;dur=348,cfOrigin;dur=89
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=6kb33BKiy2RpHd5xzMNuI1pHJ50Mdg15tn2fjqxF0A7SPnfxiPTJWc2ahLhmNAixpSV4yq9MLZT4QIrLLmfObj%2BVnjr8%2FftUghAgZdrWNZmq&quot;}]}
+2 &lt; CF-RAY: 9a0fa2af8bcce9b6-SCL
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;id&quot;: &quot;ff8081819782e69e019a546020375f4f&quot;,
+  &quot;name&quot;: &quot;Apple MacBook X&quot;,
+  &quot;updatedAt&quot;: &quot;2025-11-19T12:15:52.490+00:00&quot;,
+  &quot;data&quot;: {
+    &quot;capacity GB&quot;: 1024
+  }
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --- 3) Verificación por GET del recurso parchado ---</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param id = targetId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">692</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.86">09:15:51.204 request:
+3 &gt; GET https://api.restful-api.dev/objects?id=ff8081819782e69e019a546020375f4f
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Host: api.restful-api.dev
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+09:15:51.892 response time in milliseconds: 686
+3 &lt; 200
+3 &lt; Date: Wed, 19 Nov 2025 12:15:53 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Server: cloudflare
+3 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; cf-cache-status: DYNAMIC
+3 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+3 &lt; Server-Timing: cfEdge;dur=424,cfOrigin;dur=77
+3 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=LzmXPNpCVj7j2TG8FewcCgn%2FVnFYVMRZfdlRKI5mQDyHRCYvtmUF8PkURx7xFn%2Ft0km0iXCzPNttQQzuDzm79YNNMqD6nPgqEPI1wbgtrmue&quot;}]}
+3 &lt; CF-RAY: 9a0fa2b41a0cb4e0-SCL
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: &quot;ff8081819782e69e019a546020375f4f&quot;,
+    &quot;name&quot;: &quot;Apple MacBook X&quot;,
+    &quot;data&quot;: {
+      &quot;capacity GB&quot;: 1024
+    }
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == &#39;#[1]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def after = response[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validación del valor parchado</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField === &#39;name&#39;) karate.match(after.name, patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField !== &#39;name&#39;) karate.match(after.data[patchField], patchValue)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validar que lo no parchado se conserve (si existía)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField !== &#39;name&#39; &amp;&amp; before.name) karate.match(after.name, before.name)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (patchField === &#39;name&#39; &amp;&amp; before.data) karate.match(after.data, &#39;#object&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

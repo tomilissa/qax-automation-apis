@@ -1,0 +1,9 @@
+{
+  "name": "name TL",
+  "data": {
+    "year": 2005,
+    "price": 500.14,
+    "CPUmodel": "MacBook",
+    "hardDiskSize": "5 TB"
+  }
+}

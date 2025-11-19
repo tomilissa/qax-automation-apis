@@ -23,12 +23,6 @@ Aprender a usar los métodos HTTP PUT y PATCH para actualizar datos de un recurs
 
  - 📁 Carpeta: `Stage_3/Quick_Task`
   
-  - **Requisitos**
-
-      - [Java 11+](https://adoptium.net/) instalado
-      - [Maven](https://maven.apache.org/) instalado
-      - Editor de código recomendado: **VSCode** o **IntelliJ IDEA**
-
   - **🚀 Ejecución**
 
       1.  Clona o descarga el repositorio <https://github.com/tomilissa/qax-automation-apis.git>
@@ -40,7 +34,7 @@ Aprender a usar los métodos HTTP PUT y PATCH para actualizar datos de un recurs
 
   - **Resultados** 
       ### 🖼️ Evidencias:
-        Stage_3/Quick_Task/src/test/Evidences
+        Stage_3/Quick_Task/src/karate-reports
 
 
 

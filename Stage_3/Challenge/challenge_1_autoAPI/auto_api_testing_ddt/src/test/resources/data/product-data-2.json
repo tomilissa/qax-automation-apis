@@ -1,0 +1,37 @@
+[
+{ 
+    "initialName": "Apple MacBook Pro 17", 
+    "initialYear": 2020, 
+    "initialPrice": 800.99, 
+    "initialCPUModel": "Intel Core i5", 
+    "initialHardDisk": "1 TB", 
+    "putName": "Dell 3000", 
+    "putYear": 2023, 
+    "putPrice": 1200.30, 
+    "putCpu": "Intel i8", 
+    "putDisk": "4 TB" 
+},
+{ 
+    "initialName": "Apple MacBook Pro 18", 
+    "initialYear": 2021, 
+    "initialPrice": 950, 
+    "initialCPUModel": "Intel Core i6", 
+    "initialHardDisk": "2 TB", 
+    "putName": "Dell 3150", 
+    "putYear": 2024, 
+    "putPrice": 1400, 
+    "putCpu": "Intel i9", 
+    "putDisk": "5 TB" 
+},
+{   "initialName": "Apple MacBook Pro 19", 
+    "initialYear": 2022, 
+    "initialPrice": 1100.78, 
+    "initialCPUModel": "Intel Core i7", 
+    "initialHardDisk": "3 TB",
+    "putName": "Dell 5000", 
+    "putYear": 2025, 
+    "putPrice": 1600, 
+    "putCpu": "Intel i10", 
+    "putDisk": "6 TB" 
+}
+]
