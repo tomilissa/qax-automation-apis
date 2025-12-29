@@ -1,0 +1,5 @@
+{
+  "title": "Post desde archivo JSON",
+  "body": "Contenido del post cargado desde post-data.json",
+  "userId": 1
+}

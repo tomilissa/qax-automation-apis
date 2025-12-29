@@ -1,16 +1,26 @@
 # Quick Task
 
-## ¿Qué es?
-Breve ejercicio de práctica rápida (10–30 min) para afianzar conceptos. Forma parte del **Stage_2** de la mentoría.
+### 📁 Archivo
+`Stage_2/Quick_Task/src/test/resources/features/email.feature`
 
-## Formato esperado de entrega
-- 📁 Carpeta: `Stage_2/Quick_Task/tu-entrega-aqui`
-- 🗒️ README.md por cada entrega con:
-  - **Título de la entrega**
-  - **Objetivo / Historia de usuario**
-  - **Criterios de aceptación**
-  - **Estrategia de prueba** (casos, datos, precondiciones)
-  - **Ejecución** (comandos o pasos)
-  - **Resultados** (evidencias, logs, capturas, reporte HTML/JSON)
-- 🧪 Código/archivos de soporte en subcarpetas (`src`, `tests`, `resources`, etc.) según la tecnología.
-- 🖼️ Evidencias en `evidencias/` cuando aplique.
+### 🗒️ Objetivo
+Crear una función en JavaScript que genere un email único y utilizarla desde un archivo .feature en Karate para enviar un POST a https://jsonplaceholder.typicode.com/users
+
+### ✅ Casos de Prueba
+
+#### **CP01 - Generar email unico**
+*   **Given:** la API está disponible en la base_Url
+*   **When:** realizo una petición POST al path /users para generar un mail único
+*   **Then:** el código de respuesta debe ser 201
+*   **And:** la respuesta debe incluir un id
+
+
+
+### 🚀 Ejecución (comandos o pasos):
+1.  Clona o descarga el repositorio.
+2.  Abre una nueva terminal en la carpeta raíz `qax-automation-apis`.
+3.  Cambia al directorio del proyecto con el comando: cd Stage_2/Quick_Task
+4.  Ejecuta el script con el comando: mvn test -Dtest=karateRunner
+
+### 🖼️ Evidencias: 
+- `Stage_2/Quick_Task/src/test/Evidences`

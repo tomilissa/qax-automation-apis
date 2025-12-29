@@ -1,0 +1,2591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b4b14dd4-1ac3-4918-ae0f-7dde44194a7b",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.TheSimpsonAPI</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">9</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-11-12 10:25:58 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>CP01 Listar personajes sin especificar página</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>CP02 - Listar personajes por página</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:40]"><span>[3:40]</span> <span>CP03 - Listar personajes indicando una página inexistente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:58]"><span>[4:58]</span> <span>CP04 - Listar personajes indicando página inválida</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:77]"><span>[5:77]</span> <span>CP05 - Listar personajes por ultima página</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:95]"><span>[6:95]</span> <span>CP06 - Validar estructura minima de cada personaje en results</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:121]"><span>[7:121]</span> <span>CP07 - Obtener info del personaje por ID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:137]"><span>[8:137]</span> <span>CP08 - Obtener info del personaje por ID invalido</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:152]"><span>[9:152]</span> <span>CP9 - Verificar que el listado esta ordenado por ID</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/TheSimpsonAPI.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Exponer listado y detalle de personajes de The Simpsons con paginación</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">CP01 Listar personajes sin especificar página</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5943</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5838</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">10:25:31.427 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:36.499 response time in milliseconds: 5051
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 25 Sep 2025 04:26:39 GMT
+1 &lt; X-XSS-Protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Vary: accept-encoding
+1 &lt; X-Cache: Hit from cloudfront
+1 &lt; Via: 1.1 27de87ef88ec83a7376a2e5b5f6e6e7a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: NDGHdFKsZobIRNVl4bWEom7ebcrukxdGA5-6p8Km_X5Q-FDEE0oSuw==
+1 &lt; Age: 4179536
+{&quot;count&quot;:1182,&quot;next&quot;:&quot;https://thesimpsonsapi.com/api/characters?page=2&quot;,&quot;prev&quot;:null,&quot;pages&quot;:60,&quot;results&quot;:[{&quot;id&quot;:1,&quot;age&quot;:39,&quot;birthdate&quot;:&quot;1956-05-12&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Homer Simpson&quot;,&quot;occupation&quot;:&quot;Safety Inspector&quot;,&quot;portrait_path&quot;:&quot;/character/1.webp&quot;,&quot;phrases&quot;:[&quot;Doh!&quot;,&quot;Why you little...!&quot;,&quot;Woo-hoo!&quot;,&quot;Mmm... (food)... *drooling*&quot;,&quot;Stupid Flanders!&quot;,&quot;Shut up Flanders!&quot;,&quot;AAAAGHH!&quot;,&quot;Lisa, knock off that racket!&quot;,&quot;Uh oh, the boss.&quot;,&quot;Lets all go out for frosty chocolate milkshakes!&quot;,&quot;Whatever, Ill be at Moes.&quot;,&quot;I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!&quot;,&quot;Better them than me.&quot;,&quot;Better them than me... Oh wait, that was me.&quot;,&quot;Marge, my face hurts again!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:2,&quot;age&quot;:39,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Marge Simpson&quot;,&quot;occupation&quot;:&quot;Unemployed&quot;,&quot;portrait_path&quot;:&quot;/character/2.webp&quot;,&quot;phrases&quot;:[&quot;Hrmmm...&quot;,&quot;Now its Marges time to shine!&quot;,&quot;Oh!&quot;,&quot;Oh, Homie!&quot;,&quot;Its true. Women arent very good drivers.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:3,&quot;age&quot;:10,&quot;birthdate&quot;:&quot;1980-02-23&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Bart Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/3.webp&quot;,&quot;phrases&quot;:[&quot;¡Ay Caramba!&quot;,&quot;Eat my shorts!&quot;,&quot;I didnt do it!&quot;,&quot;Dont have a cow, man.&quot;,&quot;I’m Bart Simpson, who the hell are you?&quot;,&quot;Aah! Sideshow Bob!&quot;,&quot;Nobody better lay a finger on my Butterfinger!&quot;,&quot;I didnt think it was physically possible, but this both sucks and blows.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:4,&quot;age&quot;:8,&quot;birthdate&quot;:&quot;1982-05-09&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Lisa Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School, CTU Agent, Hall-monitor, Member of PETA&quot;,&quot;portrait_path&quot;:&quot;/character/4.webp&quot;,&quot;phrases&quot;:[&quot;Well, I wish you wouldnt. Because, aside from the fact that he has the same frailties as all human beings, hes the only father I have. Therefore, he is my model of manhood, and my estimation of him will govern the prospects of my adult relationships. So I hope you bear in mind that any knock at him is a knock at me. And I am far too young to defend myself against such onslaughts.&quot;,&quot;Bart!&quot;,&quot;If anyone wants me, Ill be in my room.&quot;,&quot;Quit it, Bart!&quot;,&quot;BAAAAART!!&quot;,&quot;Mommy.&quot;,&quot;David Hasselhoff.&quot;,&quot;Homer.&quot;,&quot;Having never received encouragement, Im not sure how it should sound, but here goes: I believe in you.&quot;,&quot;Shut up, Meg.&quot;,&quot;The truth must be told.&quot;,&quot;I hope these are recyclable.&quot;,&quot;Yeah, Bart!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:5,&quot;age&quot;:1,&quot;birthdate&quot;:&quot;1990-11-07&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maggie Simpson&quot;,&quot;occupation&quot;:&quot;Unknown&quot;,&quot;portrait_path&quot;:&quot;/character/5.webp&quot;,&quot;phrases&quot;:[&quot;*suck-suck*&quot;,&quot;Good night.&quot;,&quot;Daddy.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:6,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Abe Simpson II&quot;,&quot;occupation&quot;:&quot;Retired&quot;,&quot;portrait_path&quot;:&quot;/character/6.webp&quot;,&quot;phrases&quot;:[&quot;Ahh!&quot;,&quot;Im Santa? Oh, now Ill never die!&quot;,&quot;Hi, David, Im Grampa!&quot;,&quot;They pay me $800 a week to tell a cat and mouse what to do!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:7,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Patty Bouvier&quot;,&quot;occupation&quot;:&quot;Springfield DMV Employee&quot;,&quot;portrait_path&quot;:&quot;/character/7.webp&quot;,&quot;phrases&quot;:[&quot;Some days at the DMV, we dont let the line move at all. We call those weekdays.&quot;,&quot;Hell no! I like girls!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:8,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Selma Bouvier&quot;,&quot;occupation&quot;:&quot;Employee of Department of Motor Vehicles&quot;,&quot;portrait_path&quot;:&quot;/character/8.webp&quot;,&quot;phrases&quot;:[&quot;Hows my blubber in-law?&quot;,&quot;Drivers License is on me!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:9,&quot;age&quot;:60,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Ned Flanders&quot;,&quot;occupation&quot;:&quot;The Leftorium (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/9.webp&quot;,&quot;phrases&quot;:[&quot;Howdily-doodily, neighborino!&quot;,&quot;Hi-diddly-ho!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:10,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maude Flanders&quot;,&quot;occupation&quot;:&quot;Housewife (former)&quot;,&quot;portrait_path&quot;:&quot;/character/10.webp&quot;,&quot;phrases&quot;:[&quot;I dont judge Homer or Marge. Thats for vengeful God to do.&quot;,&quot;Neddy doesnt believe in insurance. He considers it a form of gambling.&quot;,&quot;I know. They make you uncomfortable.&quot;,&quot;In many ways, Maude Flanders was a supporting player in our lives. She didnt grab our attention with memorable catchphrases, or comical accents. But, whether you noticed her or not, Maude was always there but then she was still alive in episode 6&quot;,&quot;Excuse me, Edna. I dont think were talking about love here. Were talking about S-E-X in front of the C-H-I-L-D-R-E-N.&quot;],&quot;status&quot;:&quot;Deceased&quot;},{&quot;id&quot;:11,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Rod Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/11.webp&quot;,&quot;phrases&quot;:[&quot;Yay!!&quot;,&quot;What does gay mean??&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:12,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Todd Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary SchoolStudent at a religious private school (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/12.webp&quot;,&quot;phrases&quot;:[&quot;I said I dont want any damn vegetables!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:13,&quot;age&quot;:1381,&quot;birthdate&quot;:&quot;1886-09-15&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Charles Montgomery Burns&quot;,&quot;occupation&quot;:&quot;Owner &amp; Director of the Springfield Nuclear Power Plant&quot;,&quot;portrait_path&quot;:&quot;/character/13.webp&quot;,&quot;phrases&quot;:[&quot;Excellent!&quot;,&quot;Release the hounds!&quot;,&quot;Smithers!&quot;,&quot;Smithers, who is this ?&quot;,&quot;Simpson, eh?&quot;,&quot;Youre fired!&quot;,&quot;Oh, Fiddlesticks!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:14,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Waylon Smithers, Jr.&quot;,&quot;occupation&quot;:&quot;Assistant to Mr. Burns&quot;,&quot;portrait_path&quot;:&quot;/character/14.webp&quot;,&quot;phrases&quot;:[&quot;Yes, sir?&quot;,&quot;Thats Homer Simpson, sir - one of your [put-down]s from Sector 7G.&quot;,&quot;Actually, I value every second were together: from the moment I squeeze his orange juice in the morning, till I... tuck him in at night. Hes not just my boss, hes my best friend, too.&quot;,&quot;All right, thats it. You know, I used to wonder why Mr. Burns hated humanity. Now I know. You open your heart and they mock your very decency.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:15,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Krusty the Clown&quot;,&quot;occupation&quot;:&quot;Television personality&quot;,&quot;portrait_path&quot;:&quot;/character/15.webp&quot;,&quot;phrases&quot;:[&quot;Hey hey, kids!&quot;,&quot;Hoohoohoohahaha!&quot;,&quot;Why you little!&quot;,&quot;Im Krusty The Clown! And I Love you!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:16,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Moe Szyslak&quot;,&quot;occupation&quot;:&quot;Bartender and Owner of Moe&#39;s Tavern&quot;,&quot;portrait_path&quot;:&quot;/character/16.webp&quot;,&quot;phrases&quot;:[&quot;How ya doing?&quot;,&quot;Whaaaaaaat?&quot;,&quot;Whats-a-matter, Homer?&quot;,&quot;When I get a hold of you, Ill (insert threat here)&quot;,&quot;Hi ya, Midge.&quot;,&quot;Mike Rotch&quot;,&quot;Im a stupid moron with an ugly  face, and a big butt, and my butt smells, and I like to kiss my own butt.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:17,&quot;age&quot;:47,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Apu Nahasapeemapetilon&quot;,&quot;occupation&quot;:&quot;Owner of the Kwik-E-Mart&quot;,&quot;portrait_path&quot;:&quot;/character/17.webp&quot;,&quot;phrases&quot;:[&quot;Thank you! Come again.&quot;,&quot;That is a great dishonor to my ancestors and my God, but okay.&quot;,&quot;Okay, whatever.&quot;,&quot;Alright.&quot;,&quot;I cant believe you dont shut up!&quot;,&quot;(Referring to Homer) He slept, he stole, he was rude to the customers. Still, there goes the best-damned employee a convenience store ever had.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:18,&quot;age&quot;:57,&quot;birthdate&quot;:&quot;1953-07-08&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Seymour Skinner&quot;,&quot;occupation&quot;:&quot;Principal of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/18.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:19,&quot;age&quot;:null,&quot;birthdate&quot;:&quot;1945-03-31&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Gary Chalmers&quot;,&quot;occupation&quot;:&quot;Superintendent of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/19.webp&quot;,&quot;phrases&quot;:[&quot;SKINNERRRRRR!&quot;,&quot;Aurora Borealis? At this time of year, at this time of day, in this part of the country, localized ENTIRELY within your kitchen..?&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:20,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Edna Krabappel&quot;,&quot;occupation&quot;:&quot;Fourth grade teacher at Springfield Elementary School (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/20.webp&quot;,&quot;phrases&quot;:[&quot;Ha!&quot;,&quot;These tests will have no effect on your grades. They merely determine your future social status and financial success. If any.&quot;,&quot;Do what I mean, not what I say.&quot;,&quot;No matter what youve done, I always thought there was a spark of decency in you, Bart Simpson, but I was wrong. I never thought Id say this to a child, but you are bad on the inside.&quot;,&quot;Remember: if you can teach one kid one thing, then today will be a success...&quot;],&quot;status&quot;:&quot;Deceased&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">83</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.11">{
+  &quot;count&quot;: &quot;#number&quot;,
+  &quot;next&quot;: &quot;##string&quot;,
+  &quot;prev&quot;: &quot;##string&quot;,
+  &quot;pages&quot;: &quot;#number&quot;,
+  &quot;results&quot;: &quot;#array&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">CP02 - Listar personajes por página</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5849</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5828</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">10:25:36.871 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters?page=2
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:42.688 response time in milliseconds: 5814
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Sat, 09 Aug 2025 17:48:40 GMT
+1 &lt; X-XSS-Protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Vary: accept-encoding
+1 &lt; X-Cache: Hit from cloudfront
+1 &lt; Via: 1.1 23814b34c66f66daafdb06c6722a009a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: VfWpbYsG0cdqTQ8E2jKZJL5K2628sg9zM_5bwqzOanQJVo6074Yo1Q==
+1 &lt; Age: 8192222
+{&quot;count&quot;:1182,&quot;next&quot;:&quot;https://thesimpsonsapi.com/api/characters?page=3&quot;,&quot;prev&quot;:&quot;https://thesimpsonsapi.com/api/characters?page=1&quot;,&quot;pages&quot;:60,&quot;results&quot;:[{&quot;id&quot;:21,&quot;age&quot;:32,&quot;birthdate&quot;:&quot;1963-01-18&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Otto Mann&quot;,&quot;occupation&quot;:&quot;School bus driver&quot;,&quot;portrait_path&quot;:&quot;/character/21.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:22,&quot;age&quot;:10,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Milhouse Van Houten&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary&quot;,&quot;portrait_path&quot;:&quot;/character/22.webp&quot;,&quot;phrases&quot;:[&quot;Sorry, Bart.&quot;,&quot;Get a load of that quote / unquote Santa!&quot;,&quot;The House always wins.&quot;,&quot;Hey, Bart, want to trade lunches?&quot;,&quot;My Glasses!&quot;,&quot;Everythings comin up Milhouse!&quot;,&quot;What a Rad!&quot;,&quot;Whazzup!!!&quot;,&quot;Stupid! Stupid! Stupid!&quot;,&quot;MOOOOOM! BARTS SWEARING!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:23,&quot;age&quot;:44,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Luann Van Houten&quot;,&quot;occupation&quot;:&quot;Housewife&quot;,&quot;portrait_path&quot;:&quot;/character/23.webp&quot;,&quot;phrases&quot;:[&quot;From now on, forget everything you thought you knew about Luann Van Houten. &quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:24,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Kirk Van Houten&quot;,&quot;occupation&quot;:&quot;Unemployed&quot;,&quot;portrait_path&quot;:&quot;/character/24.webp&quot;,&quot;phrases&quot;:[&quot;I dont like the idea of Milhouse having two spaghetti meals in one day.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:25,&quot;age&quot;:8,&quot;birthdate&quot;:&quot;1982-02-10&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Ralph Wiggum&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/25.webp&quot;,&quot;phrases&quot;:[&quot;Shes touching my special area!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:26,&quot;age&quot;:39,&quot;birthdate&quot;:&quot;1954-04-20&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Barney Gumble&quot;,&quot;occupation&quot;:&quot;Helicopter pilot&quot;,&quot;portrait_path&quot;:&quot;/character/26.webp&quot;,&quot;phrases&quot;:[&quot;BURRRRRRPPPP!&quot;,&quot;Dont cry for me, Im already dead.&quot;,&quot;Is that a new kind of Mace? Its really painful!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:27,&quot;age&quot;:null,&quot;birthdate&quot;:&quot;1955-04-13&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Carl Carlson&quot;,&quot;occupation&quot;:&quot;Safety Operations Supervisor at the Springfield Nuclear Power Plant&quot;,&quot;portrait_path&quot;:&quot;/character/27.webp&quot;,&quot;phrases&quot;:[&quot;See, statements like that are why people think were gay.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:28,&quot;age&quot;:37,&quot;birthdate&quot;:&quot;1955-04-20&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Lenny Leonard&quot;,&quot;occupation&quot;:&quot;Technical Supervisor at the Springfield Nuclear Power Plant&quot;,&quot;portrait_path&quot;:&quot;/character/28.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:29,&quot;age&quot;:40,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Clancy Wiggum&quot;,&quot;occupation&quot;:&quot;Chief of the Springfield Police Department&quot;,&quot;portrait_path&quot;:&quot;/character/29.webp&quot;,&quot;phrases&quot;:[&quot;If anything goes wrong, just dial 911. Unless its an emergency.&quot;,&quot;It was only two days till he retired.&quot;,&quot;Cuff em, Lou.&quot;,&quot;Lets roll, boys!&quot;,&quot;Take em away, boys.&quot;,&quot;Book em, Lou.&quot;,&quot;Oh, dont worry, Im the pief of cholice. I mean, Im, uh, the beef with no cheese.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:30,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Sarah Wiggum&quot;,&quot;occupation&quot;:&quot;Housewife&quot;,&quot;portrait_path&quot;:&quot;/character/30.webp&quot;,&quot;phrases&quot;:[&quot;Clancy!&quot;,&quot;Clancy! Use the remote!&quot;,&quot;I love you, Poppin Fresh, Aw Clancy!&quot;,&quot;Homer, can you make me look Fancy?&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:31,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Julius Hibbert&quot;,&quot;occupation&quot;:&quot;Doctor at Springfield General Hospital&quot;,&quot;portrait_path&quot;:&quot;/character/31.webp&quot;,&quot;phrases&quot;:[&quot;A-heh-heh-heh.&quot;,&quot;Have a wowwipop.&quot;,&quot;This man is dead.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:32,&quot;age&quot;:30,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Lou&quot;,&quot;occupation&quot;:&quot;Police Sergeant&quot;,&quot;portrait_path&quot;:&quot;/character/32.webp&quot;,&quot;phrases&quot;:[&quot;Sweet.Uh... Chief?&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:33,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Jonathan Frink, Jr.&quot;,&quot;occupation&quot;:&quot;Professor&quot;,&quot;portrait_path&quot;:&quot;/character/33.webp&quot;,&quot;phrases&quot;:[&quot;Frink out&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:34,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Professor Frink&#39;s son&quot;,&quot;occupation&quot;:&quot;Professor Frink&#39;s Inventions&quot;,&quot;portrait_path&quot;:&quot;/character/34.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:35,&quot;age&quot;:31,&quot;birthdate&quot;:&quot;1957-02-25&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Robert Terwilliger&quot;,&quot;occupation&quot;:&quot;Criminal Mastermind&quot;,&quot;portrait_path&quot;:&quot;/character/35.webp&quot;,&quot;phrases&quot;:[&quot;Hello, Bart.&quot;,&quot;No! Thats German... for The Bart, The.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:36,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Martin Prince, Jr.&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School.&quot;,&quot;portrait_path&quot;:&quot;/character/36.webp&quot;,&quot;phrases&quot;:[&quot;Pick me, teacher, Im ever so smart!Dickety! Highly dubious.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:37,&quot;age&quot;:101,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Nelson Muntz&quot;,&quot;occupation&quot;:&quot;Student and Bully at Springfield Elementary&quot;,&quot;portrait_path&quot;:&quot;/character/37.webp&quot;,&quot;phrases&quot;:[&quot;Ha Ha!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:38,&quot;age&quot;:15,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Jimbo Jones&quot;,&quot;occupation&quot;:&quot;School Bully&quot;,&quot;portrait_path&quot;:&quot;/character/38.webp&quot;,&quot;phrases&quot;:[&quot;Bite me.&quot;,&quot;Yeah, I love Grimby&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:39,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Kearney Zzyzwicz&quot;,&quot;occupation&quot;:&quot;School student&quot;,&quot;portrait_path&quot;:&quot;/character/39.webp&quot;,&quot;phrases&quot;:[&quot;First person to blink is a dead man.&quot;,&quot;Shut up.&quot;,&quot;Fixing the church should be our top priority! I say this as a teenager, and the parent of a teenager.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:40,&quot;age&quot;:15,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Dolph Starbeam&quot;,&quot;occupation&quot;:&quot;School bully&quot;,&quot;portrait_path&quot;:&quot;/character/40.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.29">{
+  &quot;count&quot;: &quot;#number&quot;,
+  &quot;next&quot;: &quot;https://thesimpsonsapi.com/api/characters?page=3&quot;,
+  &quot;prev&quot;: &quot;https://thesimpsonsapi.com/api/characters?page=1&quot;,
+  &quot;pages&quot;: &quot;#number&quot;,
+  &quot;results&quot;: &quot;#array&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:40]</span>
+                <span class="scenario-name">CP03 - Listar personajes indicando una página inexistente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>419</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = &#39;250&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">413</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">10:25:42.758 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters?page=250
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:43.163 response time in milliseconds: 404
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 62
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 29 Oct 2025 23:48:16 GMT
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Cache: Hit from cloudfront
+1 &lt; Via: 1.1 7ab7b7f0629c7b41037d9e6b1e6f4f40.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: o92BqqflGVaJf9ICyaX8IcxpvrNZ23-1gPRlUrHb_A6eP6kqRe3_Ng==
+1 &lt; Age: 1172247
+{&quot;count&quot;:1182,&quot;next&quot;:null,&quot;prev&quot;:null,&quot;pages&quot;:60,&quot;results&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.47">{
+  &quot;count&quot;: &quot;#number&quot;,
+  &quot;next&quot;: null,
+  &quot;prev&quot;: null,
+  &quot;pages&quot;: &quot;#number&quot;,
+  &quot;results&quot;: &quot;#array&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:58]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:58]</span>
+                <span class="scenario-name">CP04 - Listar personajes indicando página inválida</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6479</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:58]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:58]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = &#39;a&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6474</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.63">10:25:43.223 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters?page=a
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:49.689 response time in milliseconds: 6458
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 22 Oct 2025 14:42:09 GMT
+1 &lt; X-XSS-Protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Vary: accept-encoding
+1 &lt; X-Cache: Hit from cloudfront
+1 &lt; Via: 1.1 36f14496ad1a7b4bbda7310b97214788.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: eYE3lW_RpoTlyOeaZWgUR1Cbc-NefQ7a94pryk2WtTu1mtLp7F7pUw==
+1 &lt; Age: 1809816
+{&quot;count&quot;:1182,&quot;next&quot;:&quot;https://thesimpsonsapi.com/api/characters?page=2&quot;,&quot;prev&quot;:null,&quot;pages&quot;:60,&quot;results&quot;:[{&quot;id&quot;:1,&quot;age&quot;:39,&quot;birthdate&quot;:&quot;1956-05-12&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Homer Simpson&quot;,&quot;occupation&quot;:&quot;Safety Inspector&quot;,&quot;portrait_path&quot;:&quot;/character/1.webp&quot;,&quot;phrases&quot;:[&quot;Doh!&quot;,&quot;Why you little...!&quot;,&quot;Woo-hoo!&quot;,&quot;Mmm... (food)... *drooling*&quot;,&quot;Stupid Flanders!&quot;,&quot;Shut up Flanders!&quot;,&quot;AAAAGHH!&quot;,&quot;Lisa, knock off that racket!&quot;,&quot;Uh oh, the boss.&quot;,&quot;Lets all go out for frosty chocolate milkshakes!&quot;,&quot;Whatever, Ill be at Moes.&quot;,&quot;I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!&quot;,&quot;Better them than me.&quot;,&quot;Better them than me... Oh wait, that was me.&quot;,&quot;Marge, my face hurts again!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:2,&quot;age&quot;:39,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Marge Simpson&quot;,&quot;occupation&quot;:&quot;Unemployed&quot;,&quot;portrait_path&quot;:&quot;/character/2.webp&quot;,&quot;phrases&quot;:[&quot;Hrmmm...&quot;,&quot;Now its Marges time to shine!&quot;,&quot;Oh!&quot;,&quot;Oh, Homie!&quot;,&quot;Its true. Women arent very good drivers.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:3,&quot;age&quot;:10,&quot;birthdate&quot;:&quot;1980-02-23&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Bart Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/3.webp&quot;,&quot;phrases&quot;:[&quot;¡Ay Caramba!&quot;,&quot;Eat my shorts!&quot;,&quot;I didnt do it!&quot;,&quot;Dont have a cow, man.&quot;,&quot;I’m Bart Simpson, who the hell are you?&quot;,&quot;Aah! Sideshow Bob!&quot;,&quot;Nobody better lay a finger on my Butterfinger!&quot;,&quot;I didnt think it was physically possible, but this both sucks and blows.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:4,&quot;age&quot;:8,&quot;birthdate&quot;:&quot;1982-05-09&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Lisa Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School, CTU Agent, Hall-monitor, Member of PETA&quot;,&quot;portrait_path&quot;:&quot;/character/4.webp&quot;,&quot;phrases&quot;:[&quot;Well, I wish you wouldnt. Because, aside from the fact that he has the same frailties as all human beings, hes the only father I have. Therefore, he is my model of manhood, and my estimation of him will govern the prospects of my adult relationships. So I hope you bear in mind that any knock at him is a knock at me. And I am far too young to defend myself against such onslaughts.&quot;,&quot;Bart!&quot;,&quot;If anyone wants me, Ill be in my room.&quot;,&quot;Quit it, Bart!&quot;,&quot;BAAAAART!!&quot;,&quot;Mommy.&quot;,&quot;David Hasselhoff.&quot;,&quot;Homer.&quot;,&quot;Having never received encouragement, Im not sure how it should sound, but here goes: I believe in you.&quot;,&quot;Shut up, Meg.&quot;,&quot;The truth must be told.&quot;,&quot;I hope these are recyclable.&quot;,&quot;Yeah, Bart!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:5,&quot;age&quot;:1,&quot;birthdate&quot;:&quot;1990-11-07&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maggie Simpson&quot;,&quot;occupation&quot;:&quot;Unknown&quot;,&quot;portrait_path&quot;:&quot;/character/5.webp&quot;,&quot;phrases&quot;:[&quot;*suck-suck*&quot;,&quot;Good night.&quot;,&quot;Daddy.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:6,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Abe Simpson II&quot;,&quot;occupation&quot;:&quot;Retired&quot;,&quot;portrait_path&quot;:&quot;/character/6.webp&quot;,&quot;phrases&quot;:[&quot;Ahh!&quot;,&quot;Im Santa? Oh, now Ill never die!&quot;,&quot;Hi, David, Im Grampa!&quot;,&quot;They pay me $800 a week to tell a cat and mouse what to do!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:7,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Patty Bouvier&quot;,&quot;occupation&quot;:&quot;Springfield DMV Employee&quot;,&quot;portrait_path&quot;:&quot;/character/7.webp&quot;,&quot;phrases&quot;:[&quot;Some days at the DMV, we dont let the line move at all. We call those weekdays.&quot;,&quot;Hell no! I like girls!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:8,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Selma Bouvier&quot;,&quot;occupation&quot;:&quot;Employee of Department of Motor Vehicles&quot;,&quot;portrait_path&quot;:&quot;/character/8.webp&quot;,&quot;phrases&quot;:[&quot;Hows my blubber in-law?&quot;,&quot;Drivers License is on me!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:9,&quot;age&quot;:60,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Ned Flanders&quot;,&quot;occupation&quot;:&quot;The Leftorium (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/9.webp&quot;,&quot;phrases&quot;:[&quot;Howdily-doodily, neighborino!&quot;,&quot;Hi-diddly-ho!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:10,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maude Flanders&quot;,&quot;occupation&quot;:&quot;Housewife (former)&quot;,&quot;portrait_path&quot;:&quot;/character/10.webp&quot;,&quot;phrases&quot;:[&quot;I dont judge Homer or Marge. Thats for vengeful God to do.&quot;,&quot;Neddy doesnt believe in insurance. He considers it a form of gambling.&quot;,&quot;I know. They make you uncomfortable.&quot;,&quot;In many ways, Maude Flanders was a supporting player in our lives. She didnt grab our attention with memorable catchphrases, or comical accents. But, whether you noticed her or not, Maude was always there but then she was still alive in episode 6&quot;,&quot;Excuse me, Edna. I dont think were talking about love here. Were talking about S-E-X in front of the C-H-I-L-D-R-E-N.&quot;],&quot;status&quot;:&quot;Deceased&quot;},{&quot;id&quot;:11,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Rod Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/11.webp&quot;,&quot;phrases&quot;:[&quot;Yay!!&quot;,&quot;What does gay mean??&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:12,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Todd Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary SchoolStudent at a religious private school (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/12.webp&quot;,&quot;phrases&quot;:[&quot;I said I dont want any damn vegetables!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:13,&quot;age&quot;:1381,&quot;birthdate&quot;:&quot;1886-09-15&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Charles Montgomery Burns&quot;,&quot;occupation&quot;:&quot;Owner &amp; Director of the Springfield Nuclear Power Plant&quot;,&quot;portrait_path&quot;:&quot;/character/13.webp&quot;,&quot;phrases&quot;:[&quot;Excellent!&quot;,&quot;Release the hounds!&quot;,&quot;Smithers!&quot;,&quot;Smithers, who is this ?&quot;,&quot;Simpson, eh?&quot;,&quot;Youre fired!&quot;,&quot;Oh, Fiddlesticks!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:14,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Waylon Smithers, Jr.&quot;,&quot;occupation&quot;:&quot;Assistant to Mr. Burns&quot;,&quot;portrait_path&quot;:&quot;/character/14.webp&quot;,&quot;phrases&quot;:[&quot;Yes, sir?&quot;,&quot;Thats Homer Simpson, sir - one of your [put-down]s from Sector 7G.&quot;,&quot;Actually, I value every second were together: from the moment I squeeze his orange juice in the morning, till I... tuck him in at night. Hes not just my boss, hes my best friend, too.&quot;,&quot;All right, thats it. You know, I used to wonder why Mr. Burns hated humanity. Now I know. You open your heart and they mock your very decency.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:15,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Krusty the Clown&quot;,&quot;occupation&quot;:&quot;Television personality&quot;,&quot;portrait_path&quot;:&quot;/character/15.webp&quot;,&quot;phrases&quot;:[&quot;Hey hey, kids!&quot;,&quot;Hoohoohoohahaha!&quot;,&quot;Why you little!&quot;,&quot;Im Krusty The Clown! And I Love you!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:16,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Moe Szyslak&quot;,&quot;occupation&quot;:&quot;Bartender and Owner of Moe&#39;s Tavern&quot;,&quot;portrait_path&quot;:&quot;/character/16.webp&quot;,&quot;phrases&quot;:[&quot;How ya doing?&quot;,&quot;Whaaaaaaat?&quot;,&quot;Whats-a-matter, Homer?&quot;,&quot;When I get a hold of you, Ill (insert threat here)&quot;,&quot;Hi ya, Midge.&quot;,&quot;Mike Rotch&quot;,&quot;Im a stupid moron with an ugly  face, and a big butt, and my butt smells, and I like to kiss my own butt.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:17,&quot;age&quot;:47,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Apu Nahasapeemapetilon&quot;,&quot;occupation&quot;:&quot;Owner of the Kwik-E-Mart&quot;,&quot;portrait_path&quot;:&quot;/character/17.webp&quot;,&quot;phrases&quot;:[&quot;Thank you! Come again.&quot;,&quot;That is a great dishonor to my ancestors and my God, but okay.&quot;,&quot;Okay, whatever.&quot;,&quot;Alright.&quot;,&quot;I cant believe you dont shut up!&quot;,&quot;(Referring to Homer) He slept, he stole, he was rude to the customers. Still, there goes the best-damned employee a convenience store ever had.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:18,&quot;age&quot;:57,&quot;birthdate&quot;:&quot;1953-07-08&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Seymour Skinner&quot;,&quot;occupation&quot;:&quot;Principal of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/18.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:19,&quot;age&quot;:null,&quot;birthdate&quot;:&quot;1945-03-31&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Gary Chalmers&quot;,&quot;occupation&quot;:&quot;Superintendent of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/19.webp&quot;,&quot;phrases&quot;:[&quot;SKINNERRRRRR!&quot;,&quot;Aurora Borealis? At this time of year, at this time of day, in this part of the country, localized ENTIRELY within your kitchen..?&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:20,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Edna Krabappel&quot;,&quot;occupation&quot;:&quot;Fourth grade teacher at Springfield Elementary School (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/20.webp&quot;,&quot;phrases&quot;:[&quot;Ha!&quot;,&quot;These tests will have no effect on your grades. They merely determine your future social status and financial success. If any.&quot;,&quot;Do what I mean, not what I say.&quot;,&quot;No matter what youve done, I always thought there was a spark of decency in you, Bart Simpson, but I was wrong. I never thought Id say this to a child, but you are bad on the inside.&quot;,&quot;Remember: if you can teach one kid one thing, then today will be a success...&quot;],&quot;status&quot;:&quot;Deceased&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.65">{
+  &quot;count&quot;: &quot;#number&quot;,
+  &quot;next&quot;: &quot;https://thesimpsonsapi.com/api/characters?page=2&quot;,
+  &quot;prev&quot;: null,
+  &quot;pages&quot;: &quot;#number&quot;,
+  &quot;results&quot;: &quot;#array&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:77]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:77]</span>
+                <span class="scenario-name">CP05 - Listar personajes por ultima página</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>88</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:77]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:77]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = 60</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">86</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.82">10:25:49.716 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters?page=60
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:49.799 response time in milliseconds: 80
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 448
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 24 Sep 2025 18:43:51 GMT
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Cache: Hit from cloudfront
+1 &lt; Via: 1.1 3c720de144609459c69b263ebd1dd2b2.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: VdeF-FpLvmHq3AZtGIcVgtkqKIRDr0K5nouOV3PAB8X7phyBignIeg==
+1 &lt; Age: 4214519
+{&quot;count&quot;:1182,&quot;next&quot;:null,&quot;prev&quot;:&quot;https://thesimpsonsapi.com/api/characters?page=59&quot;,&quot;pages&quot;:60,&quot;results&quot;:[{&quot;id&quot;:1181,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Boy with shades&quot;,&quot;occupation&quot;:&quot;Student&quot;,&quot;portrait_path&quot;:&quot;/character/1181.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:1182,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Hedonismbot&quot;,&quot;occupation&quot;:&quot;Robot&quot;,&quot;portrait_path&quot;:&quot;/character/1182.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.84">{
+  &quot;count&quot;: &quot;#number&quot;,
+  &quot;next&quot;: null,
+  &quot;prev&quot;: &quot;https://thesimpsonsapi.com/api/characters?page=59&quot;,
+  &quot;pages&quot;: &quot;#number&quot;,
+  &quot;results&quot;: &quot;#array&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:95]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:95]</span>
+                <span class="scenario-name">CP06 - Validar estructura minima de cada personaje en results</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>269</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:95]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:95]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">88</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">10:25:49.821 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:49.902 response time in milliseconds: 79
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 25 Sep 2025 04:26:39 GMT
+1 &lt; X-XSS-Protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Vary: accept-encoding
+1 &lt; X-Cache: Hit from cloudfront
+1 &lt; Via: 1.1 344b06204d1e1bd406cbd9ffc9e28c96.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: TeqX4RBeGbOHqSrHw6a8h3NplRQvOnl0Rsj_xN57IkCT8cPC4UJizw==
+1 &lt; Age: 4179551
+{&quot;count&quot;:1182,&quot;next&quot;:&quot;https://thesimpsonsapi.com/api/characters?page=2&quot;,&quot;prev&quot;:null,&quot;pages&quot;:60,&quot;results&quot;:[{&quot;id&quot;:1,&quot;age&quot;:39,&quot;birthdate&quot;:&quot;1956-05-12&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Homer Simpson&quot;,&quot;occupation&quot;:&quot;Safety Inspector&quot;,&quot;portrait_path&quot;:&quot;/character/1.webp&quot;,&quot;phrases&quot;:[&quot;Doh!&quot;,&quot;Why you little...!&quot;,&quot;Woo-hoo!&quot;,&quot;Mmm... (food)... *drooling*&quot;,&quot;Stupid Flanders!&quot;,&quot;Shut up Flanders!&quot;,&quot;AAAAGHH!&quot;,&quot;Lisa, knock off that racket!&quot;,&quot;Uh oh, the boss.&quot;,&quot;Lets all go out for frosty chocolate milkshakes!&quot;,&quot;Whatever, Ill be at Moes.&quot;,&quot;I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!&quot;,&quot;Better them than me.&quot;,&quot;Better them than me... Oh wait, that was me.&quot;,&quot;Marge, my face hurts again!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:2,&quot;age&quot;:39,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Marge Simpson&quot;,&quot;occupation&quot;:&quot;Unemployed&quot;,&quot;portrait_path&quot;:&quot;/character/2.webp&quot;,&quot;phrases&quot;:[&quot;Hrmmm...&quot;,&quot;Now its Marges time to shine!&quot;,&quot;Oh!&quot;,&quot;Oh, Homie!&quot;,&quot;Its true. Women arent very good drivers.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:3,&quot;age&quot;:10,&quot;birthdate&quot;:&quot;1980-02-23&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Bart Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/3.webp&quot;,&quot;phrases&quot;:[&quot;¡Ay Caramba!&quot;,&quot;Eat my shorts!&quot;,&quot;I didnt do it!&quot;,&quot;Dont have a cow, man.&quot;,&quot;I’m Bart Simpson, who the hell are you?&quot;,&quot;Aah! Sideshow Bob!&quot;,&quot;Nobody better lay a finger on my Butterfinger!&quot;,&quot;I didnt think it was physically possible, but this both sucks and blows.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:4,&quot;age&quot;:8,&quot;birthdate&quot;:&quot;1982-05-09&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Lisa Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School, CTU Agent, Hall-monitor, Member of PETA&quot;,&quot;portrait_path&quot;:&quot;/character/4.webp&quot;,&quot;phrases&quot;:[&quot;Well, I wish you wouldnt. Because, aside from the fact that he has the same frailties as all human beings, hes the only father I have. Therefore, he is my model of manhood, and my estimation of him will govern the prospects of my adult relationships. So I hope you bear in mind that any knock at him is a knock at me. And I am far too young to defend myself against such onslaughts.&quot;,&quot;Bart!&quot;,&quot;If anyone wants me, Ill be in my room.&quot;,&quot;Quit it, Bart!&quot;,&quot;BAAAAART!!&quot;,&quot;Mommy.&quot;,&quot;David Hasselhoff.&quot;,&quot;Homer.&quot;,&quot;Having never received encouragement, Im not sure how it should sound, but here goes: I believe in you.&quot;,&quot;Shut up, Meg.&quot;,&quot;The truth must be told.&quot;,&quot;I hope these are recyclable.&quot;,&quot;Yeah, Bart!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:5,&quot;age&quot;:1,&quot;birthdate&quot;:&quot;1990-11-07&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maggie Simpson&quot;,&quot;occupation&quot;:&quot;Unknown&quot;,&quot;portrait_path&quot;:&quot;/character/5.webp&quot;,&quot;phrases&quot;:[&quot;*suck-suck*&quot;,&quot;Good night.&quot;,&quot;Daddy.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:6,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Abe Simpson II&quot;,&quot;occupation&quot;:&quot;Retired&quot;,&quot;portrait_path&quot;:&quot;/character/6.webp&quot;,&quot;phrases&quot;:[&quot;Ahh!&quot;,&quot;Im Santa? Oh, now Ill never die!&quot;,&quot;Hi, David, Im Grampa!&quot;,&quot;They pay me $800 a week to tell a cat and mouse what to do!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:7,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Patty Bouvier&quot;,&quot;occupation&quot;:&quot;Springfield DMV Employee&quot;,&quot;portrait_path&quot;:&quot;/character/7.webp&quot;,&quot;phrases&quot;:[&quot;Some days at the DMV, we dont let the line move at all. We call those weekdays.&quot;,&quot;Hell no! I like girls!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:8,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Selma Bouvier&quot;,&quot;occupation&quot;:&quot;Employee of Department of Motor Vehicles&quot;,&quot;portrait_path&quot;:&quot;/character/8.webp&quot;,&quot;phrases&quot;:[&quot;Hows my blubber in-law?&quot;,&quot;Drivers License is on me!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:9,&quot;age&quot;:60,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Ned Flanders&quot;,&quot;occupation&quot;:&quot;The Leftorium (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/9.webp&quot;,&quot;phrases&quot;:[&quot;Howdily-doodily, neighborino!&quot;,&quot;Hi-diddly-ho!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:10,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maude Flanders&quot;,&quot;occupation&quot;:&quot;Housewife (former)&quot;,&quot;portrait_path&quot;:&quot;/character/10.webp&quot;,&quot;phrases&quot;:[&quot;I dont judge Homer or Marge. Thats for vengeful God to do.&quot;,&quot;Neddy doesnt believe in insurance. He considers it a form of gambling.&quot;,&quot;I know. They make you uncomfortable.&quot;,&quot;In many ways, Maude Flanders was a supporting player in our lives. She didnt grab our attention with memorable catchphrases, or comical accents. But, whether you noticed her or not, Maude was always there but then she was still alive in episode 6&quot;,&quot;Excuse me, Edna. I dont think were talking about love here. Were talking about S-E-X in front of the C-H-I-L-D-R-E-N.&quot;],&quot;status&quot;:&quot;Deceased&quot;},{&quot;id&quot;:11,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Rod Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/11.webp&quot;,&quot;phrases&quot;:[&quot;Yay!!&quot;,&quot;What does gay mean??&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:12,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Todd Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary SchoolStudent at a religious private school (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/12.webp&quot;,&quot;phrases&quot;:[&quot;I said I dont want any damn vegetables!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:13,&quot;age&quot;:1381,&quot;birthdate&quot;:&quot;1886-09-15&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Charles Montgomery Burns&quot;,&quot;occupation&quot;:&quot;Owner &amp; Director of the Springfield Nuclear Power Plant&quot;,&quot;portrait_path&quot;:&quot;/character/13.webp&quot;,&quot;phrases&quot;:[&quot;Excellent!&quot;,&quot;Release the hounds!&quot;,&quot;Smithers!&quot;,&quot;Smithers, who is this ?&quot;,&quot;Simpson, eh?&quot;,&quot;Youre fired!&quot;,&quot;Oh, Fiddlesticks!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:14,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Waylon Smithers, Jr.&quot;,&quot;occupation&quot;:&quot;Assistant to Mr. Burns&quot;,&quot;portrait_path&quot;:&quot;/character/14.webp&quot;,&quot;phrases&quot;:[&quot;Yes, sir?&quot;,&quot;Thats Homer Simpson, sir - one of your [put-down]s from Sector 7G.&quot;,&quot;Actually, I value every second were together: from the moment I squeeze his orange juice in the morning, till I... tuck him in at night. Hes not just my boss, hes my best friend, too.&quot;,&quot;All right, thats it. You know, I used to wonder why Mr. Burns hated humanity. Now I know. You open your heart and they mock your very decency.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:15,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Krusty the Clown&quot;,&quot;occupation&quot;:&quot;Television personality&quot;,&quot;portrait_path&quot;:&quot;/character/15.webp&quot;,&quot;phrases&quot;:[&quot;Hey hey, kids!&quot;,&quot;Hoohoohoohahaha!&quot;,&quot;Why you little!&quot;,&quot;Im Krusty The Clown! And I Love you!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:16,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Moe Szyslak&quot;,&quot;occupation&quot;:&quot;Bartender and Owner of Moe&#39;s Tavern&quot;,&quot;portrait_path&quot;:&quot;/character/16.webp&quot;,&quot;phrases&quot;:[&quot;How ya doing?&quot;,&quot;Whaaaaaaat?&quot;,&quot;Whats-a-matter, Homer?&quot;,&quot;When I get a hold of you, Ill (insert threat here)&quot;,&quot;Hi ya, Midge.&quot;,&quot;Mike Rotch&quot;,&quot;Im a stupid moron with an ugly  face, and a big butt, and my butt smells, and I like to kiss my own butt.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:17,&quot;age&quot;:47,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Apu Nahasapeemapetilon&quot;,&quot;occupation&quot;:&quot;Owner of the Kwik-E-Mart&quot;,&quot;portrait_path&quot;:&quot;/character/17.webp&quot;,&quot;phrases&quot;:[&quot;Thank you! Come again.&quot;,&quot;That is a great dishonor to my ancestors and my God, but okay.&quot;,&quot;Okay, whatever.&quot;,&quot;Alright.&quot;,&quot;I cant believe you dont shut up!&quot;,&quot;(Referring to Homer) He slept, he stole, he was rude to the customers. Still, there goes the best-damned employee a convenience store ever had.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:18,&quot;age&quot;:57,&quot;birthdate&quot;:&quot;1953-07-08&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Seymour Skinner&quot;,&quot;occupation&quot;:&quot;Principal of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/18.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:19,&quot;age&quot;:null,&quot;birthdate&quot;:&quot;1945-03-31&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Gary Chalmers&quot;,&quot;occupation&quot;:&quot;Superintendent of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/19.webp&quot;,&quot;phrases&quot;:[&quot;SKINNERRRRRR!&quot;,&quot;Aurora Borealis? At this time of year, at this time of day, in this part of the country, localized ENTIRELY within your kitchen..?&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:20,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Edna Krabappel&quot;,&quot;occupation&quot;:&quot;Fourth grade teacher at Springfield Elementary School (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/20.webp&quot;,&quot;phrases&quot;:[&quot;Ha!&quot;,&quot;These tests will have no effect on your grades. They merely determine your future social status and financial success. If any.&quot;,&quot;Do what I mean, not what I say.&quot;,&quot;No matter what youve done, I always thought there was a spark of decency in you, Bart Simpson, but I was wrong. I never thought Id say this to a child, but you are bad on the inside.&quot;,&quot;Remember: if you can teach one kid one thing, then today will be a success...&quot;],&quot;status&quot;:&quot;Deceased&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def isBirthdateValid = function(v) { return v == null || v.matches(&#39;^\\d{4}-\\d{2}-\\d{2}$&#39;) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def isPortraitPathValid = function(v) { return v == null || v.matches(&#39;^/character/\\d+\\.webp$&#39;) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.results ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">155</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.105">{
+    &quot;id&quot;: &quot;#number&quot;,
+    &quot;age&quot;: &quot;##number&quot;,
+    &quot;birthdate&quot;: &quot;#? isBirthdateValid(_)&quot;,
+    &quot;gender&quot;: &quot;#string&quot;,
+    &quot;name&quot;: &quot;#string&quot;,
+    &quot;occupation&quot;: &quot;##string&quot;,
+    &quot;phrases&quot;: &quot;#array&quot;,
+    &quot;status&quot;: &quot;#string&quot;,
+    &quot;portrait_path&quot;: &quot;#? isPortraitPathValid(_)&quot;,
+  }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:121]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:121]</span>
+                <span class="scenario-name">CP07 - Obtener info del personaje por ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2377</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:121]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:121]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2370</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.125">10:25:50.100 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters/1
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:52.467 response time in milliseconds: 2367
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 12 Nov 2025 13:25:52 GMT
+1 &lt; X-XSS-Protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Vary: accept-encoding
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 7ab7b7f0629c7b41037d9e6b1e6f4f40.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: 5eFXGGrtkOLPZhisTeBK-c6Fl7vOR1I3JmHRTfgSqT8V7fw9edEQHA==
+{&quot;id&quot;:1,&quot;age&quot;:39,&quot;birthdate&quot;:&quot;1956-05-12&quot;,&quot;description&quot;:&quot;Homer Jay Simpson (born May 12, 1956) is a man from Springfield and the protagonist of the animated television series The Simpsons. He is a crude, ignorant, and slobbish individual, although he is fundamentally a good person and shows great caring and loyalty to his family, friends and on occasion, to those he barely knows or those he considers his enemies.&quot;,&quot;first_appearance_ep_id&quot;:1,&quot;first_appearance_sh_id&quot;:1,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Homer Simpson&quot;,&quot;occupation&quot;:&quot;Safety Inspector&quot;,&quot;phrases&quot;:[&quot;Doh!&quot;,&quot;Why you little...!&quot;,&quot;Woo-hoo!&quot;,&quot;Mmm... (food)... *drooling*&quot;,&quot;Stupid Flanders!&quot;,&quot;Shut up Flanders!&quot;,&quot;AAAAGHH!&quot;,&quot;Lisa, knock off that racket!&quot;,&quot;Uh oh, the boss.&quot;,&quot;Lets all go out for frosty chocolate milkshakes!&quot;,&quot;Whatever, Ill be at Moes.&quot;,&quot;I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!&quot;,&quot;Better them than me.&quot;,&quot;Better them than me... Oh wait, that was me.&quot;,&quot;Marge, my face hurts again!&quot;],&quot;portrait_path&quot;:&quot;/character/1.webp&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;first_appearance_ep&quot;:{&quot;id&quot;:1,&quot;airdate&quot;:&quot;1989-12-17&quot;,&quot;description&quot;:&quot;\&quot;Simpsons Roasting on an Open Fire\&quot; (also known as \&quot;The Simpsons Christmas Special\&quot;) is the first episode of Season 1 of The Simpsons, as well as the series premiere/pilot episode of the series. It is the show&#39;s only episode to be aired in the 1980s. (Minus the original shorts.)&quot;,&quot;episode_number&quot;:1,&quot;image_path&quot;:&quot;/episode/1.webp&quot;,&quot;name&quot;:&quot;Simpsons Roasting on an Open Fire&quot;,&quot;season&quot;:1,&quot;synopsis&quot;:&quot;When Mr. Burns announces that none of the workers will be getting Christmas bonuses and Marge reveals that she spent the extra Christmas gift money on getting Bart&#39;s \&quot;Mother\&quot; tattoo removed, Homer keeps his lack of funds for the holidays a secret and gets a job as a mall Santa.&quot;},&quot;first_appearance_sh&quot;:{&quot;id&quot;:1,&quot;airdate&quot;:&quot;1987-04-19&quot;,&quot;description&quot;:&quot;Good Night is the first Simpsons short and the first televised appearance of the Simpson family. It originally aired on The Tracey Ullman Show on April 19, 1987. This short was also used before the couch gag in the episode \&quot;Looking for Mr. Goodbart\&quot; to celebrate three decades of the Simpsons&#39; televised debut, but only showed the scene with Marge singing \&quot;Rock-a-bye baby\&quot; to Maggie.&quot;,&quot;episode_number&quot;:1,&quot;image_path&quot;:&quot;/short/1.webp&quot;,&quot;name&quot;:&quot;Good Night&quot;,&quot;season&quot;:1,&quot;synopsis&quot;:&quot;Marge and Homer Simpson, a married couple, say goodnight to their three kids, Bart, Lisa, and Maggie Simpson but all does not go to plan. Bart philosophically contemplates (first time and last) the wonders of the mind, Lisa hears Marge say \&quot;don&#39;t let the bed bugs bite\&quot; and fears that her bed bugs will eat her, and Maggie is traumatized by the lyrics of \&quot;rock-a-bye-baby\&quot;.&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.age == 39</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.birthdate == &#39;1956-05-12&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.gender == &#39;Male&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;Homer Simpson&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.occupation == &#39;Safety Inspector&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.portrait_path == &#39;/character/1.webp&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.phrases == [&quot;Doh!&quot;, &quot;Why you little...!&quot;, &quot;Woo-hoo!&quot;, &quot;Mmm... (food)... *drooling*&quot;, &quot;Stupid Flanders!&quot;, &quot;Shut up Flanders!&quot;, &quot;AAAAGHH!&quot;, &quot;Lisa, knock off that racket!&quot;, &quot;Uh oh, the boss.&quot;, &quot;Lets all go out for frosty chocolate milkshakes!&quot;, &quot;Whatever, Ill be at Moes.&quot;, &quot;I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!&quot;, &quot;Better them than me.&quot;, &quot;Better them than me... Oh wait, that was me.&quot;, &quot;Marge, my face hurts again!&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status == &#39;Alive&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:137]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:137]</span>
+                <span class="scenario-name">CP08 - Obtener info del personaje por ID invalido</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2108</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:137]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:137]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.139">
+      <div class="step-ref passed">139</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters/10000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2106</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.141">10:25:52.491 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters/10000
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:54.593 response time in milliseconds: 2102
+1 &lt; 404
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 70
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 12 Nov 2025 13:25:53 GMT
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 af182712aea286edc0e565428deab302.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: 4yrM24f6b3Vs3Ns0TmVKr0dSCq9aFz4t345d2vLsM5tAI7AYxNKDqg==
+{&quot;message&quot;:&quot;Character not found&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;statusCode&quot;:404}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref passed">142</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.143">
+      <div class="step-ref passed">143</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.143">{
+    &quot;message&quot;: &quot;Character not found&quot;,
+    &quot;error&quot;: &quot;Not Found&quot;,
+    &quot;statusCode&quot;: 404
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:152]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:152]</span>
+                <span class="scenario-name">CP9 - Verificar que el listado esta ordenado por ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4120</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:152]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:152]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/characters/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.154">
+      <div class="step-ref passed">154</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.155">
+      <div class="step-ref passed">155</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4087</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.155">10:25:54.607 request:
+1 &gt; GET https://thesimpsonsapi.com/api/characters
+1 &gt; Content-Type: application/json; charset=utf-8
+1 &gt; Host: thesimpsonsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:25:58.692 response time in milliseconds: 4084
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 25 Sep 2025 04:26:39 GMT
+1 &lt; X-XSS-Protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Vary: accept-encoding
+1 &lt; X-Cache: Hit from cloudfront
+1 &lt; Via: 1.1 f31d0df41f022b7a74c52a8a98d01a64.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: EZE50-P5
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; X-Amz-Cf-Id: fEMmzdrmG20DVO8jfVkk_OXZFSuO4_ElRq3kyovlMXQpYHqDbipFjw==
+1 &lt; Age: 4179560
+{&quot;count&quot;:1182,&quot;next&quot;:&quot;https://thesimpsonsapi.com/api/characters?page=2&quot;,&quot;prev&quot;:null,&quot;pages&quot;:60,&quot;results&quot;:[{&quot;id&quot;:1,&quot;age&quot;:39,&quot;birthdate&quot;:&quot;1956-05-12&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Homer Simpson&quot;,&quot;occupation&quot;:&quot;Safety Inspector&quot;,&quot;portrait_path&quot;:&quot;/character/1.webp&quot;,&quot;phrases&quot;:[&quot;Doh!&quot;,&quot;Why you little...!&quot;,&quot;Woo-hoo!&quot;,&quot;Mmm... (food)... *drooling*&quot;,&quot;Stupid Flanders!&quot;,&quot;Shut up Flanders!&quot;,&quot;AAAAGHH!&quot;,&quot;Lisa, knock off that racket!&quot;,&quot;Uh oh, the boss.&quot;,&quot;Lets all go out for frosty chocolate milkshakes!&quot;,&quot;Whatever, Ill be at Moes.&quot;,&quot;I am evil Ho-mer! I am evil Ho-mer! I am evil Ho-mer!&quot;,&quot;Better them than me.&quot;,&quot;Better them than me... Oh wait, that was me.&quot;,&quot;Marge, my face hurts again!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:2,&quot;age&quot;:39,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Marge Simpson&quot;,&quot;occupation&quot;:&quot;Unemployed&quot;,&quot;portrait_path&quot;:&quot;/character/2.webp&quot;,&quot;phrases&quot;:[&quot;Hrmmm...&quot;,&quot;Now its Marges time to shine!&quot;,&quot;Oh!&quot;,&quot;Oh, Homie!&quot;,&quot;Its true. Women arent very good drivers.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:3,&quot;age&quot;:10,&quot;birthdate&quot;:&quot;1980-02-23&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Bart Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/3.webp&quot;,&quot;phrases&quot;:[&quot;¡Ay Caramba!&quot;,&quot;Eat my shorts!&quot;,&quot;I didnt do it!&quot;,&quot;Dont have a cow, man.&quot;,&quot;I’m Bart Simpson, who the hell are you?&quot;,&quot;Aah! Sideshow Bob!&quot;,&quot;Nobody better lay a finger on my Butterfinger!&quot;,&quot;I didnt think it was physically possible, but this both sucks and blows.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:4,&quot;age&quot;:8,&quot;birthdate&quot;:&quot;1982-05-09&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Lisa Simpson&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School, CTU Agent, Hall-monitor, Member of PETA&quot;,&quot;portrait_path&quot;:&quot;/character/4.webp&quot;,&quot;phrases&quot;:[&quot;Well, I wish you wouldnt. Because, aside from the fact that he has the same frailties as all human beings, hes the only father I have. Therefore, he is my model of manhood, and my estimation of him will govern the prospects of my adult relationships. So I hope you bear in mind that any knock at him is a knock at me. And I am far too young to defend myself against such onslaughts.&quot;,&quot;Bart!&quot;,&quot;If anyone wants me, Ill be in my room.&quot;,&quot;Quit it, Bart!&quot;,&quot;BAAAAART!!&quot;,&quot;Mommy.&quot;,&quot;David Hasselhoff.&quot;,&quot;Homer.&quot;,&quot;Having never received encouragement, Im not sure how it should sound, but here goes: I believe in you.&quot;,&quot;Shut up, Meg.&quot;,&quot;The truth must be told.&quot;,&quot;I hope these are recyclable.&quot;,&quot;Yeah, Bart!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:5,&quot;age&quot;:1,&quot;birthdate&quot;:&quot;1990-11-07&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maggie Simpson&quot;,&quot;occupation&quot;:&quot;Unknown&quot;,&quot;portrait_path&quot;:&quot;/character/5.webp&quot;,&quot;phrases&quot;:[&quot;*suck-suck*&quot;,&quot;Good night.&quot;,&quot;Daddy.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:6,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Abe Simpson II&quot;,&quot;occupation&quot;:&quot;Retired&quot;,&quot;portrait_path&quot;:&quot;/character/6.webp&quot;,&quot;phrases&quot;:[&quot;Ahh!&quot;,&quot;Im Santa? Oh, now Ill never die!&quot;,&quot;Hi, David, Im Grampa!&quot;,&quot;They pay me $800 a week to tell a cat and mouse what to do!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:7,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Patty Bouvier&quot;,&quot;occupation&quot;:&quot;Springfield DMV Employee&quot;,&quot;portrait_path&quot;:&quot;/character/7.webp&quot;,&quot;phrases&quot;:[&quot;Some days at the DMV, we dont let the line move at all. We call those weekdays.&quot;,&quot;Hell no! I like girls!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:8,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Selma Bouvier&quot;,&quot;occupation&quot;:&quot;Employee of Department of Motor Vehicles&quot;,&quot;portrait_path&quot;:&quot;/character/8.webp&quot;,&quot;phrases&quot;:[&quot;Hows my blubber in-law?&quot;,&quot;Drivers License is on me!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:9,&quot;age&quot;:60,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Ned Flanders&quot;,&quot;occupation&quot;:&quot;The Leftorium (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/9.webp&quot;,&quot;phrases&quot;:[&quot;Howdily-doodily, neighborino!&quot;,&quot;Hi-diddly-ho!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:10,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Maude Flanders&quot;,&quot;occupation&quot;:&quot;Housewife (former)&quot;,&quot;portrait_path&quot;:&quot;/character/10.webp&quot;,&quot;phrases&quot;:[&quot;I dont judge Homer or Marge. Thats for vengeful God to do.&quot;,&quot;Neddy doesnt believe in insurance. He considers it a form of gambling.&quot;,&quot;I know. They make you uncomfortable.&quot;,&quot;In many ways, Maude Flanders was a supporting player in our lives. She didnt grab our attention with memorable catchphrases, or comical accents. But, whether you noticed her or not, Maude was always there but then she was still alive in episode 6&quot;,&quot;Excuse me, Edna. I dont think were talking about love here. Were talking about S-E-X in front of the C-H-I-L-D-R-E-N.&quot;],&quot;status&quot;:&quot;Deceased&quot;},{&quot;id&quot;:11,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Rod Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/11.webp&quot;,&quot;phrases&quot;:[&quot;Yay!!&quot;,&quot;What does gay mean??&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:12,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Todd Flanders&quot;,&quot;occupation&quot;:&quot;Student at Springfield Elementary SchoolStudent at a religious private school (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/12.webp&quot;,&quot;phrases&quot;:[&quot;I said I dont want any damn vegetables!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:13,&quot;age&quot;:1381,&quot;birthdate&quot;:&quot;1886-09-15&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Charles Montgomery Burns&quot;,&quot;occupation&quot;:&quot;Owner &amp; Director of the Springfield Nuclear Power Plant&quot;,&quot;portrait_path&quot;:&quot;/character/13.webp&quot;,&quot;phrases&quot;:[&quot;Excellent!&quot;,&quot;Release the hounds!&quot;,&quot;Smithers!&quot;,&quot;Smithers, who is this ?&quot;,&quot;Simpson, eh?&quot;,&quot;Youre fired!&quot;,&quot;Oh, Fiddlesticks!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:14,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Waylon Smithers, Jr.&quot;,&quot;occupation&quot;:&quot;Assistant to Mr. Burns&quot;,&quot;portrait_path&quot;:&quot;/character/14.webp&quot;,&quot;phrases&quot;:[&quot;Yes, sir?&quot;,&quot;Thats Homer Simpson, sir - one of your [put-down]s from Sector 7G.&quot;,&quot;Actually, I value every second were together: from the moment I squeeze his orange juice in the morning, till I... tuck him in at night. Hes not just my boss, hes my best friend, too.&quot;,&quot;All right, thats it. You know, I used to wonder why Mr. Burns hated humanity. Now I know. You open your heart and they mock your very decency.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:15,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Krusty the Clown&quot;,&quot;occupation&quot;:&quot;Television personality&quot;,&quot;portrait_path&quot;:&quot;/character/15.webp&quot;,&quot;phrases&quot;:[&quot;Hey hey, kids!&quot;,&quot;Hoohoohoohahaha!&quot;,&quot;Why you little!&quot;,&quot;Im Krusty The Clown! And I Love you!&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:16,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Moe Szyslak&quot;,&quot;occupation&quot;:&quot;Bartender and Owner of Moe&#39;s Tavern&quot;,&quot;portrait_path&quot;:&quot;/character/16.webp&quot;,&quot;phrases&quot;:[&quot;How ya doing?&quot;,&quot;Whaaaaaaat?&quot;,&quot;Whats-a-matter, Homer?&quot;,&quot;When I get a hold of you, Ill (insert threat here)&quot;,&quot;Hi ya, Midge.&quot;,&quot;Mike Rotch&quot;,&quot;Im a stupid moron with an ugly  face, and a big butt, and my butt smells, and I like to kiss my own butt.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:17,&quot;age&quot;:47,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Apu Nahasapeemapetilon&quot;,&quot;occupation&quot;:&quot;Owner of the Kwik-E-Mart&quot;,&quot;portrait_path&quot;:&quot;/character/17.webp&quot;,&quot;phrases&quot;:[&quot;Thank you! Come again.&quot;,&quot;That is a great dishonor to my ancestors and my God, but okay.&quot;,&quot;Okay, whatever.&quot;,&quot;Alright.&quot;,&quot;I cant believe you dont shut up!&quot;,&quot;(Referring to Homer) He slept, he stole, he was rude to the customers. Still, there goes the best-damned employee a convenience store ever had.&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:18,&quot;age&quot;:57,&quot;birthdate&quot;:&quot;1953-07-08&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Seymour Skinner&quot;,&quot;occupation&quot;:&quot;Principal of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/18.webp&quot;,&quot;phrases&quot;:[],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:19,&quot;age&quot;:null,&quot;birthdate&quot;:&quot;1945-03-31&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;name&quot;:&quot;Gary Chalmers&quot;,&quot;occupation&quot;:&quot;Superintendent of Springfield Elementary School&quot;,&quot;portrait_path&quot;:&quot;/character/19.webp&quot;,&quot;phrases&quot;:[&quot;SKINNERRRRRR!&quot;,&quot;Aurora Borealis? At this time of year, at this time of day, in this part of the country, localized ENTIRELY within your kitchen..?&quot;],&quot;status&quot;:&quot;Alive&quot;},{&quot;id&quot;:20,&quot;age&quot;:null,&quot;birthdate&quot;:null,&quot;gender&quot;:&quot;Female&quot;,&quot;name&quot;:&quot;Edna Krabappel&quot;,&quot;occupation&quot;:&quot;Fourth grade teacher at Springfield Elementary School (formerly)&quot;,&quot;portrait_path&quot;:&quot;/character/20.webp&quot;,&quot;phrases&quot;:[&quot;Ha!&quot;,&quot;These tests will have no effect on your grades. They merely determine your future social status and financial success. If any.&quot;,&quot;Do what I mean, not what I say.&quot;,&quot;No matter what youve done, I always thought there was a spark of decency in you, Bart Simpson, but I was wrong. I never thought Id say this to a child, but you are bad on the inside.&quot;,&quot;Remember: if you can teach one kid one thing, then today will be a success...&quot;],&quot;status&quot;:&quot;Deceased&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.156">
+      <div class="step-ref passed">156</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.158">
+      <div class="step-ref passed">158</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def resultIds = karate.map(response.results, function(r){ return r.id })</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.159">
+      <div class="step-ref passed">159</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sortedIds = karate.sort(resultIds)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.161">
+      <div class="step-ref passed">161</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match resultIds == sortedIds</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
