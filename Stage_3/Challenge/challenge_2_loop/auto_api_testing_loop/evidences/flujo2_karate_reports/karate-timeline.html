@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/E2E-product[1.1:156]","start":1763555377077,"end":1763555382768,"title":"features\/E2E-product[1.1:156] 09:29:37.077-09:29:42.768 Flujo completo de creación y actualización de un producto usando PUT y PATCH"},{"id":2,"group":1,"content":"features\/E2E-product[1.2:156]","start":1763555382792,"end":1763555387081,"title":"features\/E2E-product[1.2:156] 09:29:42.792-09:29:47.081 Flujo completo de creación y actualización de un producto usando PUT y PATCH"},{"id":3,"group":1,"content":"features\/E2E-product[1.3:156]","start":1763555387095,"end":1763555391874,"title":"features\/E2E-product[1.3:156] 09:29:47.095-09:29:51.874 Flujo completo de creación y actualización de un producto usando PUT y PATCH"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
